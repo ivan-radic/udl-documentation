@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Default section
 weight: 20
 navigation: Default
-permalink: /udl-documentation/default/
+permalink: /default/
 ---
 
 Defaults
@@ -11,11 +11,11 @@ Defaults
 
 This is the simplest option. You can only change styler of default text.
 
-![](/images/default_01.png)
+![]({{ site.baseurl}}/images/default_01.png)
 
 After you click "Styler" button, you will see "Styler Dialog" window.
 
-![](/images/default_02.png)
+![]({{ site.baseurl}}/images/default_02.png)
 
 Font options did not change from UDL 1.0, you can select fonts used, their size or color, background color, 
 as well as bold, italic and underline options. Nesting options are disabled as default text cannot have nested 

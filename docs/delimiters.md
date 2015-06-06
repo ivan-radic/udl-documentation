@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Delimiters section
 weight: 90
 navigation: Delimiters
-permalink: /udl-documentation/delimiters/
+permalink: /delimiters/
 ---
 
 Delimiters
@@ -14,7 +14,7 @@ This section describes new options users have when defining delimiters.
 Delimiters changed a lot in UDL 2.1.    
 The most obvious difference is the GUI, so we'll start with that.
 
-![](/images/delimiters_01.png)
+![]({{ site.baseurl}}/images/delimiters_01.png)
 
 Just like in case of keywords, number of delimiter lists has been expanded to eight (as suggested by Don), 
 if more is needed, please state so in discussion on Notepad++ forum. 
@@ -26,9 +26,9 @@ There have been numerous changes under the hood also, and we'll cover them here 
 First example is a simple C++ string.    
 Nothing fancy here.
 
-![](/images/delimiters_02.png)
+![]({{ site.baseurl}}/images/delimiters_02.png)
 
-![](/images/delimiters_03.png)
+![]({{ site.baseurl}}/images/delimiters_03.png)
 
 #### Example 2:
 
@@ -45,9 +45,9 @@ In fact it transforms it into a vector of three strings:
 
 So, it will find a line end regardless of your file format (unix/dos/osx)
 
-![](/images/delimiters_04.png)
+![]({{ site.baseurl}}/images/delimiters_04.png)
 
-![](/images/delimiters_05.png)
+![]({{ site.baseurl}}/images/delimiters_05.png)
 
 #### Example 3:
 
@@ -61,9 +61,9 @@ So, to have complete definition of C++ line comments, one must define both conti
 In UDL 2.1 you do that with special operator __(( ))__.
 So, if two or more strings are defined inside of a special operator __(( ))__, they are interchangeable.
 
-![](/images/delimiters_06.png)
+![]({{ site.baseurl}}/images/delimiters_06.png)
 
-![](/images/delimiters_07.png)
+![]({{ site.baseurl}}/images/delimiters_07.png)
 
 #### Example 4:
 
@@ -84,9 +84,9 @@ By using grouping with operator __(( ))__ I was able to keep the logic of indexi
 vertical aligning (both explained in [comments section]({{ site.baseurl }}/comments.html)) 
 and to make sure that "__??/__" applies only to C++ line comments.
 
-![](/images/delimiters_08.png)
+![]({{ site.baseurl}}/images/delimiters_08.png)
 
-![](/images/delimiters_09.png)
+![]({{ site.baseurl}}/images/delimiters_09.png)
 
 #### Example 5:
 
@@ -95,9 +95,9 @@ Also this is the only exception of the rule that whitespace can be used freely.
 When defining "__))__" inside of special operator __(( ))__ you must "glue" four consecutive close braces.
 Otherwise you will define an empty keyword set.
 
-![](/images/delimiters_10.png)
+![]({{ site.baseurl}}/images/delimiters_10.png)
 
-![](/images/delimiters_11.png)
+![]({{ site.baseurl}}/images/delimiters_11.png)
 
 ## Nesting of delimiters
 
@@ -132,7 +132,7 @@ testing for Delimiter 3.
 
 So, when Delimiters overlap, always put longer strings first !
 
-![](/images/delimiters_12.png)
+![]({{ site.baseurl}}/images/delimiters_12.png)
 
-![](/images/delimiters_13.png)
+![]({{ site.baseurl}}/images/delimiters_13.png)
 

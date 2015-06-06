@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Numbers section
 weight: 60
 navigation: Numbers
-permalink: /udl-documentation/numbers/
+permalink: /numbers/
 ---
 
 Numbers
@@ -11,7 +11,7 @@ Numbers
 
 This section describes new options user have when defining numbers.
 
-![Numbers dialog](/images/numbers_01.png)
+![Numbers dialog]({{ site.baseurl}}/images/numbers_01.png)
 
 UDL number panel received major update in Notepad++ version 6.3. If you are using version 6.2, please scroll below.
 
@@ -87,7 +87,7 @@ That's it with numbers.
 
 ### Old version, UDL 2.0 (used in Notepad++ v 6.2)
 
-![Numbers dialog](/images/numbers_02.png)
+![Numbers dialog]({{ site.baseurl}}/images/numbers_02.png)
 
 __Note: this section is left here for people stuck with old version, 
 if you use newer version, you can safely ignore this section !!!__

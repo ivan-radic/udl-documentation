@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Operators section
 weight: 50
 navigation: Operators
-permalink: /udl-documentation/operators/
+permalink: /operators/
 ---
 
 Operators
@@ -13,7 +13,7 @@ This section gives short explanation of operator options.
 For detailed discussion about __"forward"__ and __"backward"__ search, please read 
 section [Introduction]({{ site.baseurl }}/index.html).
 
-![Operators dialog](/images/operators_01.png)
+![Operators dialog]({{ site.baseurl}}/images/operators_01.png)
 
 Operators are split into two groups: Operators1 and Operators2.
 
@@ -40,7 +40,7 @@ Operators2 group is just another keyword group, Keyword group 9 if you will.
 I added it here just for easier use of UDL 2.1 GUI, and for better understanding of how operators work. 
 Users could define the same keyword list in keywords groups 1 through 8 and there would be no difference.
 
-![Operators example 1](/images/operators_02.png)
+![Operators example 1]({{ site.baseurl}}/images/operators_02.png)
 
 As demonstrated in picture above, Operators1 are always highlighted, 
 and Operators2 are highlighted only if separated from rest of the code.

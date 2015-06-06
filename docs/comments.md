@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Comments section
 weight: 80
 navigation: Comments
-permalink: /udl-documentation/comments/
+permalink: /comments/
 ---
 
 Comments
@@ -11,7 +11,7 @@ Comments
 
 This section describes new options user have when defining comments.
 
-![](/images/comments_01.png)
+![]({{ site.baseurl}}/images/comments_01.png)
 
 Comments handling in UDL 2.1 changed significantly.    
 Let's start with the most obvious part, the GUI.
@@ -46,7 +46,7 @@ Example:
 
 This is a very "basic" demonstration, but it serves its purpose well.
 
-![](/images/comments_02.png)
+![]({{ site.baseurl}}/images/comments_02.png)
 
 - line 1, this is what line comments look like in most languages. They start somewhere, and end at the EOL (end of line)
 - line3, if your language supports line comment continuation to next line, like in this C++like example, you may define that too
@@ -69,7 +69,7 @@ Now, lets try to nest these two comment types, to see the difference between UDL
 
 This is an UDL 1.0 screen capture.
 
-![](/images/comments_03.png)
+![]({{ site.baseurl}}/images/comments_03.png)
 
 Comments are underlined so it would be more obvious where they end.
 Notice how "__*/__" string always ends a comment !!
@@ -81,7 +81,7 @@ If you have more, nesting will break, as demonstrated in line 4.
 
 This is an UDL 2.1 screen capture.
 
-![](/images/comments_04.png)
+![]({{ site.baseurl}}/images/comments_04.png)
 
 Notice how in line 4, UDL 2.1 correctly highlights D-style comments, even if there is a "__*/__" within comment.
 This is possible because UDL 2.1 uses indexes to match correct close string.
@@ -98,45 +98,45 @@ Comments in UDL 2.1 support nesting. The only thing user needs to do is to selec
 Do this by selecting appropriate check box in nesting section of Styler dialog.
 In our first example we are going to allow nesting of comments within comments.
 
-![](/images/comments_05.png)
+![]({{ site.baseurl}}/images/comments_05.png)
 
-![](/images/comments_06.png)
+![]({{ site.baseurl}}/images/comments_06.png)
 
 As you can see, UDL 2.1 happily allows you to have nested comments. 
 But there is a better way to do the same thing as demonstrated in example 2.
 
 #### Example 2:
 
-![](/images/comments_07.png)
+![]({{ site.baseurl}}/images/comments_07.png)
 
 1. Define Delimiter 1 exactly the same as Comments
 2. Allow Delimiter 1 to have nested Comments
 3. Likewise, allow Comments to have nested Delimiter 1
 4. Delimiter 1 and Comments will have similar but slightly different color
 
-![](/images/comments_08.png)
+![]({{ site.baseurl}}/images/comments_08.png)
 
-![](/images/comments_09.png)
+![]({{ site.baseurl}}/images/comments_09.png)
 
 And voila !!!    
 Now your nesting is not only allowed, it is also highlighted.    
 Call me a geek that gets excited over nothing, but I think this is really cool :-)
 
-![](/images/comments_10.png)
+![]({{ site.baseurl}}/images/comments_10.png)
 
 #### Example 3:
 
 In this example we will highlight nested line comments.   
 Just like in example 2, we define similar yet different styles, and allow nesting of Line comments within Comments.
 
-![](/images/comments_11.png)
+![]({{ site.baseurl}}/images/comments_11.png)
 
 #### Example 4:
 
 If you want Line comments to look like Comments, but to be highlighted when nested (and only when nested), 
 that can be done too.
 
-![](/images/comments_12.png)
+![]({{ site.baseurl}}/images/comments_12.png)
 
 Just define Delimiter 2 (any delimiter will do, I'll use this one for demonstration) like in previous picture.
 __((EOL))__ is a special keyword that is expanded to a vector of three strings:    
@@ -155,7 +155,7 @@ For this example it is enough to remember that it expands __EOL__ into an __end 
 
 As you can see, nesting of delimiters that imitate line comments works just as good.
 
-![](/images/comments_13.png)
+![]({{ site.baseurl}}/images/comments_13.png)
 
 #### Example 5:
 
@@ -165,9 +165,9 @@ As you can see, nesting of delimiters that imitate line comments works just as g
 1. Notice how you need to define separate EOL for each open keyword (and make sure EOL's are separated with spaces !!)
 1. now you have your TODO's highlighted
 
-![](/images/comments_14.png)
+![]({{ site.baseurl}}/images/comments_14.png)
 
-![](/images/comments_15.png)
+![]({{ site.baseurl}}/images/comments_15.png)
 
 ## Folding of comments
 
@@ -176,7 +176,7 @@ If you were not scrolling too fast, you might have noticed a small check box at 
 Such small feature, but it took so much time to develop it.    
 Let's explore it.
 
-![](/images/comments_16.png)
+![]({{ site.baseurl}}/images/comments_16.png)
 
 #### Example 6:
 
@@ -193,7 +193,7 @@ folding of two or more consecutive comment lines.
 Notice how last example can be folded only in "pure" comment lines.
 Folding of comments never folds non comment text !!
 
-![](/images/comments_17.png)
+![]({{ site.baseurl}}/images/comments_17.png)
 
 
 #### Example 7:
@@ -201,14 +201,14 @@ Folding of comments never folds non comment text !!
 If you want to document code with heavy use of comments, trade off is code readability. 
 There will be a lot of scrolling. A lot !!
 
-![](/images/comments_18.png)
+![]({{ site.baseurl}}/images/comments_18.png)
 
 And UDL 2.1 is here to help.
 
 Set Allow folding of comments, and you'll get rid of annoying comments simply by folding them. 
 Just like in the next picture.
 
-![](/images/comments_19.png)
+![]({{ site.baseurl}}/images/comments_19.png)
 
 
 And there you go.     

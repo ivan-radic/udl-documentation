@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Folding in code section
 weight: 30
 navigation: Folding in code
-permalink: /udl-documentation/folding-in-code/
+permalink: /folding-in-code/
 ---
 
 Folding in code
@@ -19,7 +19,7 @@ This is a typical C++ folding definition.
 Curly braces represent folding points in the code and preprocessor 
 is also supported (for this demo not all statements were defined)
 
-![](/images/folding_in_code_01.png)
+![]({{ site.baseurl}}/images/folding_in_code_01.png)
 
 There are two important things here.     
 As you can see both Folding 1 and Folding 2 create folding points, but they work differently.    
@@ -30,7 +30,7 @@ In this case opening curly brace stands next to closing round brace, and in line
 - Folding 2 (preprocessor stuff) works when surrounded by white space, 
 but not when glued to word "UNICODE", as demonstrated in line 14
 
-![](/images/folding_in_code_02.png)
+![]({{ site.baseurl}}/images/folding_in_code_02.png)
 
 __Note__: forward and backward search concept is explained in more detail 
 in [Introduction]({{ site.baseurl }}/index.html) page.     
@@ -41,10 +41,10 @@ You should read that part if you haven't already.
 UDL 2.1 will automatically create middle folding point if open folding point is 
 followed by a close folding point on the same line.
 
-![](/images/folding_in_code_03.png)
+![]({{ site.baseurl}}/images/folding_in_code_03.png)
 
 #### Example 3
 
 Use of multi-part keywords is supported in Folder in code 2, as you can see in this example.
 
-![](/images/folding_in_code_04.png)
+![]({{ site.baseurl}}/images/folding_in_code_04.png)

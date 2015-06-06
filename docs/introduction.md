@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Introduction
 weight: 15
 navigation: Introduction
-permalink: /udl-documentation/introduction/
+permalink: /introduction/
 ---
 
 Introduction to UDL 2 code parser
@@ -15,7 +15,7 @@ Users should understand this part before proceeding to read about other UDL 2.1 
 
 ## Introduction to UDL 1.0 internal logic
 
-![](/images/introduction_01.png)
+![]({{ site.baseurl}}/images/introduction_01.png)
 
 
 In this picture you can see a set of three keywords.   
@@ -39,7 +39,7 @@ I mean nothing offensive.
 
 ## Introduction to UDL 2.1 internal logic
 
-![](/images/introduction_02.png)
+![]({{ site.baseurl}}/images/introduction_02.png)
 
 What we have here is a combination of two keywords ("first" and "second") connected by a two-character operator ("<<"), and closed with another operator (";") (Note that operators are underlined so you could see them more easily)
 So, how does UDL 2.1 work then?
@@ -92,7 +92,7 @@ Python style:
 
 #### Forward search example:
 
-![](/images/introduction_03.png)
+![]({{ site.baseurl}}/images/introduction_03.png)
 
 C++ boolean operators are special characters. They can never be part of variable name. 
 That's why they can be "glued" to preceding or following keyword. And this is demonstrated in line three. 
@@ -112,9 +112,9 @@ and it is not important what follows before or after forward keyword.
 
 ## Backward search example:
 
-![](/images/introduction_04.png)
+![]({{ site.baseurl}}/images/introduction_04.png)
 
-![](/images/introduction_05.png)
+![]({{ site.baseurl}}/images/introduction_05.png)
 
 
 Python boolean operators are normal English words and or not, very similar to other Python keywords. 

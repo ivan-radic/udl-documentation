@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Keywords section
 weight: 70
 navigation: Keywords
-permalink: /udl-documentation/keywords/
+permalink: /keywords/
 ---
 
 Keywords
@@ -11,7 +11,7 @@ Keywords
 
 This section describes new options user have when defining keyword lists.
 
-![Keywords dialog](/images/keywords.png)
+![Keywords dialog]({{ site.baseurl}}/images/keywords.png)
 
 Number of keyword lists has been expanded to eight (as suggested by Don, if more is needed, 
 please state so in discussion on Notepad++ forum). Functionality is the same as in UDL 1.0. 

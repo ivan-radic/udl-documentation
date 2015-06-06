@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Folding in comment section
 weight: 40
 navigation: Folding in comment
-permalink: /udl-documentation/folding-in-comment/
+permalink: /folding-in-comment/
 ---
 
 Folding in comment
@@ -15,13 +15,13 @@ Let's demonstrate it by using C++ comments.
 
 #### Example 1
 
-![](/images/folding_in_comment_01.png)
+![]({{ site.baseurl}}/images/folding_in_comment_01.png)
 
 Note: When selecting keywords that turn comments into folding points, it is important to select unique keywords. 
 Don't use stuff that is part of your source code, that will create unexpected folding points when 
 you comment out parts of your source code.
 
-![](/images/folding_in_comment_02.png)
+![]({{ site.baseurl}}/images/folding_in_comment_02.png)
 
 Notice how comments that have 'folding in comment' keywords embedded in them, create folding points in your code.
 I even mixed line comments and normal comments, and it works. So, any comment with 'folding in comment' keywords 
@@ -32,10 +32,10 @@ For one way to do it, see next example.
 #### Example 2
 
 Let's steal some ideas from C#. Our code will be organized in '__regions__'.    
-![](/images/folding_in_comment_03.png)
+![]({{ site.baseurl}}/images/folding_in_comment_03.png)
 
 One keyword group will be anything that starts with 'at sign' (@), so check Prefix mode option.     
-![](/images/folding_in_comment_04.png)
+![]({{ site.baseurl}}/images/folding_in_comment_04.png)
 
 We'll define comments as standard C++ comments:    
 
@@ -43,7 +43,7 @@ We'll define comments as standard C++ comments:
     // cpp line comment
 
 The important thing here is to allow nesting of keyword group two (words that start with '@' sign)    
-![](/images/folding_in_comment_05.png)
+![]({{ site.baseurl}}/images/folding_in_comment_05.png)
 
 
 Finally, the magic happens.     
@@ -58,7 +58,7 @@ These three keywords are not defined anywhere, I can call my regions anything I 
 Notice how '__region__' and '__end__' keywords have the same color as comments, 
 but __region name__ uses distinct color to be easily noticeable.
 
-![](/images/folding_in_comment_06.png)
+![]({{ site.baseurl}}/images/folding_in_comment_06.png)
 
 Folding in comment keywords support multi-part keywords too.    
 

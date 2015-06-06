@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - introduction
 weight: 10
 navigation: Home
-permalink: /udl-documentation/
+permalink: //
 ---
 
 Welcome to UDL documentation site
