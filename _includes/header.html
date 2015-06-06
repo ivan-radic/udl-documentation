@@ -1,0 +1,11 @@
+{% assign pages = site.pages | sort:"weight"  %}
+<ul>
+  {% for p in pages %}
+    <li>
+      <a {% if p.url == page.url %}class="buttons"{% endif %} href="{{ site.baseurl }}{{ p.url }}">
+        {{ p.navigation }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
