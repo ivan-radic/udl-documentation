@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Introduction
 weight: 15
 navigation: Introduction
-permalink: introduction.html
+permalink: /udl-documentation/introduction/
 ---
 
 Introduction to UDL 2 code parser

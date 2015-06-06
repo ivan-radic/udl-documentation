@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Delimiters section
 weight: 90
 navigation: Delimiters
-permalink: delimiters.html
+permalink: /udl-documentation/delimiters/
 ---
 
 Delimiters

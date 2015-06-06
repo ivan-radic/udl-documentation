@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Keywords section
 weight: 70
 navigation: Keywords
-permalink: keywords.html
+permalink: /udl-documentation/keywords/
 ---
 
 Keywords

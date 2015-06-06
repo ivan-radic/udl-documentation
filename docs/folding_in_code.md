@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Folding in code section
 weight: 30
 navigation: Folding in code
-permalink: folding-in-code.html
+permalink: /udl-documentation/folding-in-code/
 ---
 
 Folding in code

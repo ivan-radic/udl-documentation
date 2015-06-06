@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Comments section
 weight: 80
 navigation: Comments
-permalink: /comments/
+permalink: /udl-documentation/comments/
 ---
 
 Comments

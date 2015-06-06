@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Numbers section
 weight: 60
 navigation: Numbers
-permalink: numbers.html
+permalink: /udl-documentation/numbers/
 ---
 
 Numbers

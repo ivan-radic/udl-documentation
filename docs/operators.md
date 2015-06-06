@@ -3,7 +3,7 @@ layout: dinky
 title: UDL - Operators section
 weight: 50
 navigation: Operators
-permalink: /operators/
+permalink: /udl-documentation/operators/
 ---
 
 Operators
