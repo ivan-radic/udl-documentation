@@ -45,10 +45,10 @@ What we have here is a combination of two keywords ("first" and "second") connec
 So, how does UDL 2.1 work then?
 Again, this is just a simplified description:
 
-1.identification starts in position 0, so first "search start point" is set to 0
-1.in each position UDL 2.1 performs a "forward" scan of operators.
-1.when UDL reaches position 5 (first '<' character), it detects an operator.
-1.now UDL 2.1 does two things:
+1. identification starts in position 0, so first "search start point" is set to 0
+1. in each position UDL 2.1 performs a "forward" scan of operators.
+1. when UDL reaches position 5 (first '<' character), it detects an operator.
+1. now UDL 2.1 does two things:
     - it performs "backward" scan (the same way UDL 1.0 does it) by comparing everything from 
     last "search start point" until current position (in this case string "first") 
     and it correctly identifies it as a keyword.
@@ -138,7 +138,7 @@ Second picture shows what happens when we redefine Python operators as Operators
 This time around, there are no ugly surprises. Operators are detected only if surrounded by white space or 
 forward search keywords like Operators1 (demonstrated in lines 9,10,11)
 
-o sum up: both forward and backward search logic must be implemented in UDL 2.1 and it is user's job to 
+To sum up: both forward and backward search logic must be implemented in UDL 2.1 and it is user's job to 
 decide which one should be applied on a given set of keywords. 
 Rule of the thumb is: if your keyword can be "glued" to other keywords, 
 like C++ boolean operators, use forward search, if your keyword must be separated from rest of the 
