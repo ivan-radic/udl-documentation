@@ -1,6 +1,4 @@
 ---
-layout: dinky
-title: UDL - Numbers section
 weight: 60
 navigation: Numbers
 permalink: /numbers/

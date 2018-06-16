@@ -1,6 +1,4 @@
 ---
-layout: dinky
-title: UDL - introduction
 weight: 10
 navigation: Home
 permalink: //

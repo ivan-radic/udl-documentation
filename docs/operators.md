@@ -1,6 +1,4 @@
 ---
-layout: dinky
-title: UDL - Operators section
 weight: 50
 navigation: Operators
 permalink: /operators/

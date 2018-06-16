@@ -1,6 +1,4 @@
 ---
-layout: dinky
-title: UDL - Folding in comment section
 weight: 40
 navigation: Folding in comment
 permalink: /folding-in-comment/

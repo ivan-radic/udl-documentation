@@ -1,6 +1,4 @@
 ---
-layout: dinky
-title: UDL - Default section
 weight: 20
 navigation: Default
 permalink: /default/

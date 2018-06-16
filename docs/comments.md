@@ -1,6 +1,4 @@
 ---
-layout: dinky
-title: UDL - Comments section
 weight: 80
 navigation: Comments
 permalink: /comments/

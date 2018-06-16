@@ -1,6 +1,4 @@
 ---
-layout: dinky
-title: UDL - Folding in code section
 weight: 30
 navigation: Folding in code
 permalink: /folding-in-code/
