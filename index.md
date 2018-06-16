@@ -19,3 +19,8 @@ Also, please note that this is documentation site only, source code is available
 
 Thank you and best regards,    
 Ivan Radić
+
+Table of Contents
+=================
+
+{% include nav.html %}
