@@ -1,6 +1,7 @@
 # this repo
 # =========
 
+*.private.*
 .bundle/
 .sass-cache/
 _site/
