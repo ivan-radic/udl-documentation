@@ -1,11 +1,10 @@
-{% assign pages = site.pages | sort:"weight"  %}
+{% assign pages = site.html_pages | sort: "weight" %}
 <ul>
   {% for p in pages %}
     <li>
-      <a {% if p.url == page.url %}class="buttons"{% endif %} href="{{ site.baseurl }}{{ p.url }}">
+      {% unless p.url == page.url %}<a href="{{ site.baseurl }}{{ p.url }}">{% endunless %}
         {{ p.navigation }}
-      </a>
+      {% unless p.url == page.url %}</a>{% endunless %}
     </li>
   {% endfor %}
 </ul>
-
