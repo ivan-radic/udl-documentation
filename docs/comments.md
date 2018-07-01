@@ -18,7 +18,7 @@ Let's start with the most obvious part, the GUI.
 Line comments now support three set of keywords: open, continue and close.    
 
 UDL2.1 has an option to force line comments to start at the beginning of line.    
-When this option is switched on, line comments will be recognized only if they are located at the beginning of line. 
+When this option is switched on, line comments will be recognized only if they are located at the beginning of line.
 Anywhere else, they will be treated as default text.
 
 __Open:__    
@@ -35,8 +35,8 @@ Example:
     that extends to next line
 
 __Close:__     
-This is a very rare feature, but in some languages comments have start and end markers, 
-but if end marker is missing, a comment automatically becomes a line comment and ends 
+This is a very rare feature, but in some languages comments have start and end markers,
+but if end marker is missing, a comment automatically becomes a line comment and ends
 at the end of current line. This is where you need to define close string, e.g.: !
 Example:
 
@@ -54,9 +54,9 @@ This is a very "basic" demonstration, but it serves its purpose well.
 ### Comments:
 
 Comments are defined in a way that is similar to UDL 1.0.
-You just create a list of strings that represent comment start position and comment end position. 
-But there is a hidden feature here. In picture 1, notice vertical position of Open and Close edit boxes! 
-Notice how I defined two separate comment pairs and how they align vertically. 
+You just create a list of strings that represent comment start position and comment end position.
+But there is a hidden feature here. In picture 1, notice vertical position of Open and Close edit boxes!
+Notice how I defined two separate comment pairs and how they align vertically.
 I wanted to define these two comment sets:
 
     /* this is a C language comment */
@@ -71,10 +71,10 @@ This is an UDL 1.0 screen capture.
 
 Comments are underlined so it would be more obvious where they end.
 Notice how "__*/__" string always ends a comment !!
-This happens because UDL 1.0 simply goes through a list of comment close strings, 
+This happens because UDL 1.0 simply goes through a list of comment close strings,
 and as soon as it finds the first one to match, it accepts it as a comment end.
-UDL 1.0 has no way to connect matching open/close strings. 
-It simply settles with the first one it can find, which works great if you have just one pair. 
+UDL 1.0 has no way to connect matching open/close strings.
+It simply settles with the first one it can find, which works great if you have just one pair.
 If you have more, nesting will break, as demonstrated in line 4.
 
 This is an UDL 2.1 screen capture.
@@ -83,7 +83,7 @@ This is an UDL 2.1 screen capture.
 
 Notice how in line 4, UDL 2.1 correctly highlights D-style comments, even if there is a "__*/__" within comment.
 This is possible because UDL 2.1 uses indexes to match correct close string.
-When Open string is found, its index is recorded internally (e.g. for "/+", index is 1). 
+When Open string is found, its index is recorded internally (e.g. for "/+", index is 1).
 That means that a comment can be closed only by a Close string of the same index.
 
 So, users can just vertically align open and close strings, and UDL 2.1 will take care of the rest.
@@ -92,7 +92,7 @@ So, users can just vertically align open and close strings, and UDL 2.1 will tak
 
 #### Example 1:
 
-Comments in UDL 2.1 support nesting. The only thing user needs to do is to select which keyword type can be nested. 
+Comments in UDL 2.1 support nesting. The only thing user needs to do is to select which keyword type can be nested.
 Do this by selecting appropriate check box in nesting section of Styler dialog.
 In our first example we are going to allow nesting of comments within comments.
 
@@ -100,7 +100,7 @@ In our first example we are going to allow nesting of comments within comments.
 
 ![]({{ site.baseurl}}/images/comments_06.png)
 
-As you can see, UDL 2.1 happily allows you to have nested comments. 
+As you can see, UDL 2.1 happily allows you to have nested comments.
 But there is a better way to do the same thing as demonstrated in example 2.
 
 #### Example 2:
@@ -131,7 +131,7 @@ Just like in example 2, we define similar yet different styles, and allow nestin
 
 #### Example 4:
 
-If you want Line comments to look like Comments, but to be highlighted when nested (and only when nested), 
+If you want Line comments to look like Comments, but to be highlighted when nested (and only when nested),
 that can be done too.
 
 ![]({{ site.baseurl}}/images/comments_12.png)
@@ -146,9 +146,9 @@ __((EOL))__ is a special keyword that is expanded to a vector of three strings:
 So, that every new line combination is covered.     
 __((EOL))__ has been introduced just for this reason. It allows users to define Delimiter equivalent of Line comments.
 
-Notice how I wrapped __EOL__ with special __double brace operator__. 
-This operator has a special meaning in UDL 2.1 and it is explained in more detail in 
-[Delimiters section]({{ site.baseurl }}/delimiters.html). 
+Notice how I wrapped __EOL__ with special __double brace operator__.
+This operator has a special meaning in UDL 2.1 and it is explained in more detail in
+[Delimiters section]({{ site.baseurl }}/delimiters.html).
 For this example it is enough to remember that it expands __EOL__ into an __end of line character__.
 
 As you can see, nesting of delimiters that imitate line comments works just as good.
@@ -157,7 +157,7 @@ As you can see, nesting of delimiters that imitate line comments works just as g
 
 #### Example 5:
 
-1. define standard C++ line comments 
+1. define standard C++ line comments
 1. allow nesting of Delimiter1 within line comments.
 1. define Delimiter1 as in this example
 1. Notice how you need to define separate EOL for each open keyword (and make sure EOL's are separated with spaces !!)
@@ -179,7 +179,7 @@ Let's explore it.
 #### Example 6:
 
 
-When option  Allow folding of comments is set, UDL 2.1 automatically tracks comment lines and allows 
+When option  Allow folding of comments is set, UDL 2.1 automatically tracks comment lines and allows
 folding of two or more consecutive comment lines.
 
 - line 1, two  consecutive  line comments can be folded
@@ -196,14 +196,14 @@ Folding of comments never folds non comment text !!
 
 #### Example 7:
 
-If you want to document code with heavy use of comments, trade off is code readability. 
+If you want to document code with heavy use of comments, trade off is code readability.
 There will be a lot of scrolling. A lot !!
 
 ![]({{ site.baseurl}}/images/comments_18.png)
 
 And UDL 2.1 is here to help.
 
-Set Allow folding of comments, and you'll get rid of annoying comments simply by folding them. 
+Set Allow folding of comments, and you'll get rid of annoying comments simply by folding them.
 Just like in the next picture.
 
 ![]({{ site.baseurl}}/images/comments_19.png)
@@ -212,7 +212,7 @@ Just like in the next picture.
 And there you go.     
 No more unnecessary scrolling :-)
 
-On the other hand, if you find this feature tiresome, just disable it. 
+On the other hand, if you find this feature tiresome, just disable it.
 
 
 ## Conclusion
