@@ -20,11 +20,12 @@ Sometimes you may want to fix a typo, or do some small changes that doesn't need
 
 If you are going to create a new feature or fix a bug, please follow the "fork and pull" model.
 
-The best way is to edit and preview in your local machine. Running on local machine requires: `git`, `Ruby`, `RubyGems` and `bundler`. Feel free to run:
+The best way is to edit and preview in your local machine. Running on local machine requires: `git`, `Ruby`, `RubyGems` and `bundler`. In Terminal, feel free to run:
 
 ```shell
 git clone [your_fork_repo_url]
 bundle install # to install github-pages gem, jekyll, etc.
+source build.sh
 bundle exec jekyll serve # http://localhost:4000/udl-documentation/
 ```
 
