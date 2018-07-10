@@ -1,0 +1,21 @@
+---
+---
+
+// favored Notepad++ styles
+
+$npp-green: {{ site.npp_ui_green }};
+$npp-orange: #e2911e;
+
+// override Bootstrap default styles
+
+$theme-colors: (
+	"primary": $npp-green,
+	"secondary": $npp-orange
+);
+
+@import "bootstrap";
+
+// quick fix #todo
+img {
+	max-width: 100%;
+}
