@@ -17,8 +17,8 @@ exclude:
 
 # Build settings
 
-theme: jekyll-theme-minimal
-# theme: minima
+# theme: jekyll-theme-minimal # Github Pages theme for testing only
+theme: minima # default Jekyll theme
 markdown: kramdown
 show_downloads: false
 # gems:
