@@ -19,6 +19,7 @@ exclude:
 
 # theme: jekyll-theme-minimal # Github Pages theme for testing only
 theme: minima # default Jekyll theme
+npp_ui_green: "#ADCC6E"
 markdown: kramdown
 show_downloads: false
 # gems:
