@@ -2,20 +2,35 @@
 ---
 
 // favored Notepad++ styles
+// ========================
 
 $npp-green: {{ site.npp_ui_green }};
 $npp-orange: #e2911e;
 
 // override Bootstrap default styles
 
+$body-bg: $npp-green;
 $theme-colors: (
 	"primary": $npp-green,
 	"secondary": $npp-orange
 );
+$link-color: $npp-orange;
+$link-hover-color: $npp-orange;
 
 @import "bootstrap";
+
+
+// customized styles
+// =================
 
 // quick fix #todo
 img {
 	max-width: 100%;
+}
+
+// medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	body {
+		border: 6px solid $npp-green;
+	}
 }
