@@ -145,5 +145,3 @@ source code by white space or special characters, use backward search.
 This option is given in case of operators and folding in code keywords.
 All other keyword sets simply fall into one of two search directions, and are not user selectable.
 Complete list is given in paragraph above.
-
-{% include nav.html %}
