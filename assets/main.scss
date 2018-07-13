@@ -28,6 +28,27 @@ img {
 	max-width: 100%;
 }
 
+.site-footer {
+	background-color: #6b5000;
+	color: wheat;
+	p {
+		margin-bottom: 0;
+		font-size: .8rem;
+	}
+	.nav {
+		margin-bottom: .6rem;
+		text-align: center;
+	}
+	.nav-item + .nav-item {
+		// margin-left: 1rem;
+		:before {
+			content: "|";
+			color: wheat;
+			margin: .5rem;
+		}
+	}
+}
+
 // medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	body {
