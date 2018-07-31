@@ -1,10 +1,10 @@
-{% assign pages = site.html_pages | sort: "weight" %}
+{% assign pages = site.html_pages | sort: 'weight' %}
 <ul>
-  {% for p in pages %}
-    <li>
-      {% unless p.url == page.url %}<a href="{{ site.baseurl }}{{ p.url }}">{% endunless %}
-        {{ p.navigation }}
-      {% unless p.url == page.url %}</a>{% endunless %}
-    </li>
-  {% endfor %}
+	{% for p in pages %}
+	<li>
+		{% unless p.url == page.url %}<a href="{{ p.url | relative_url }}">{% endunless %}
+			{{ p.navigation }}
+		{% unless p.url == page.url %}</a>{% endunless %}
+	</li>
+	{% endfor %}
 </ul>
