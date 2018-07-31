@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 0
 navigation: Home
 permalink: //
 ---
