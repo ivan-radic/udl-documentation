@@ -32,6 +32,88 @@ img {
 	text-align: center;
 }
 
+.nav-menu {
+	ul {
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0 0 0 2rem;
+		line-height: 2rem;
+	}
+	li {
+		position: relative;
+		font-size: 1.1rem;
+		&:before {
+			position: absolute;
+			left: -19px;
+			display: block;
+			content: '';
+			width: 11px;
+			border-left: 1px dotted #ddd;
+		}
+		&:after {
+			position: absolute;
+			left: -19px;
+			display: block;
+			content: '';
+			height: 31px;
+			border-left: 1px dotted #ddd;
+		}
+	}
+}
+.nav-menu-side {
+	li {
+		&:before {
+			top: 1px;
+			height: 15px;
+			border-bottom: 1px dotted #ddd;
+		}
+		&:after {
+			bottom: -6px;
+		}
+		&:first-child {
+			margin: 0 0 0 -1.33rem;
+			&:before {
+				display: none;
+			}
+			&:after {
+				display: none;
+			}
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+.nav-menu-bottom {
+	li {
+		&:before {
+			top: 16px;
+			height: 15px;
+			border-top: 1px dotted #ddd;
+		}
+		&:after {
+			bottom: 15px;
+		}
+		&:last-child {
+			margin: 0 0 0 -1.33rem;
+			&:before {
+				display: none;
+			}
+			&:after {
+				display: none;
+			}
+		}
+		&:first-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
 .site-footer {
 	background-color: #6b5000;
 	color: wheat;
