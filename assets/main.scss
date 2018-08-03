@@ -33,6 +33,15 @@ img {
 	text-align: center;
 }
 
+.below-header-fix {
+	margin-top: 4rem;
+}
+
+.sticky-sidebar {
+	position: sticky;
+	top: 6rem;
+}
+
 .nav-menu {
 	ul {
 		display: inline-block;
