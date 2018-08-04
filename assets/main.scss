@@ -64,8 +64,8 @@ img {
 	}
 }
 
-// medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
 	body {
 		border: 6px solid $npp-green;
 	}
