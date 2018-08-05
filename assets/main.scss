@@ -18,14 +18,14 @@ $link-color: $npp-orange;
 $link-hover-color: $npp-orange;
 
 @import "bootstrap";
+@import "menu-icon";
 @import "nav-folder-menu";
 @import "sticky-footer";
 
 
-// customized styles
-// =================
-
 // quick fix #todo
+// =========
+
 img {
 	display: block;
 	margin-left: auto;
@@ -36,6 +36,27 @@ img {
 
 .below-header-fix {
 	margin-top: 4rem;
+}
+
+.navbar-row {
+	position: relative;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+
+// site styles
+// ===========
+
+#navbar-toggle {
+	&-action {
+		cursor: pointer;
+	}
+	&-menu {
+		padding-left: 1.5em;
+	}
 }
 
 .sticky-sidebar {

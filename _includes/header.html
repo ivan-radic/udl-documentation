@@ -1,9 +1,23 @@
-<header class="navbar navbar-expand navbar-light bg-primary flex-column fixed-top" role="banner">
-	<a href="{{ "/" | absolute_url }}">
-		<div class="navbar-brand">
-			{{ site.title | default: site.github.repository_name }}
-		</div><div class="navbar-text d-none d-sm-inline-block">
-			{{ site.tagline | default: site.github.project_tagline }}
+<header class="navbar navbar-light bg-primary fixed-top" role="banner">
+	<div id="navbar-toggle-action" class="navbar-row" data-toggle="collapse" data-target="#navbarToggleMenu" aria-controls="navbarToggleMenu" aria-expanded="false" aria-label="Toggle navigation">
+		<div class="col-1 d-lg-none p-0">
+			<div class="menu-icon">
+			</div>
 		</div>
-	</a>
+		<div class="col-10 col-lg-12 text-center">
+			<div class="navbar-brand">
+				{{ site.title | default: site.github.repository_name }}
+			</div><div class="navbar-text d-none d-sm-inline-block">
+				{{ site.tagline | default: site.github.project_tagline }}
+			</div>
+		</div>
+		<div class="col-1 d-lg-none p-0">
+			&nbsp;
+		</div>
+	</div>
+	<div class="navbar-row">
+		<div id="navbar-toggle-menu" class="col-12 collapse nav-folder-menu">
+			{% include nav.html home_position='top' %}
+		</div>
+	</div>
 </header>
