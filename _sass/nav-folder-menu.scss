@@ -5,7 +5,7 @@ $nav-folder-menu-dot-color: slategray !default;
 $nav-folder-menu-current-font-color: darkslategray !default;
 
 .nav-folder-menu {
-	padding: 0 0 2rem 0;
+	padding: 1rem 0 2rem 0;
 	a {
 		display: block;
 		width: 100%;
@@ -13,6 +13,7 @@ $nav-folder-menu-current-font-color: darkslategray !default;
 		&:hover,
 		&:active {
 			background-color: $nav-folder-menu-hover-bg-color;
+			border-radius: 2px;
 			color: $nav-folder-menu-hover-font-color;
 			text-decoration: none;
 		}
@@ -38,6 +39,7 @@ $nav-folder-menu-current-font-color: darkslategray !default;
 		}
 		&:hover {
 			background-color: $nav-folder-menu-hover-bg-color;
+			border-radius: 2px;
 		}
 		&:before {
 			content: '';

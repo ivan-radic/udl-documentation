@@ -17,6 +17,12 @@ $theme-colors: (
 $link-color: $npp-orange;
 $link-hover-color: $npp-orange;
 
+// override nav-folder-menu defaults
+$nav-folder-menu-font-color: #566638; // solid color of navbar subtitle
+$nav-folder-menu-hover-bg-color: #566638; // solid color of navbar subtitle
+$nav-folder-menu-dot-color: #566638; // solid color of navbar subtitle
+$nav-folder-menu-current-font-color: #11140b; // solid color of navbar title
+
 @import "bootstrap";
 @import "menu-icon";
 @import "nav-folder-menu";
@@ -53,9 +59,6 @@ img {
 #navbar-toggle {
 	&-action {
 		cursor: pointer;
-	}
-	&-menu {
-		padding-left: 1.5em;
 	}
 }
 

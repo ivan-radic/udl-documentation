@@ -10,11 +10,15 @@
 	{% endif %}
 	{% for p in pages %}
 	{% unless p.weight == 0 %}
-	<li>
-		{% unless p.url == page.url %}<a href="{{ p.url | relative_url }}">{% endunless %}
-			{{ p.navigation }}
-		{% unless p.url == page.url %}</a>{% endunless %}
+	{% if p.url == page.url %}
+	<li class="current">
+		{{ p.navigation }}
 	</li>
+	{% else %}
+	<li>
+		<a href="{{ p.url | relative_url }}">{{ p.navigation }}</a>
+	</li>
+	{% endif %}
 	{% endunless %}
 	{% endfor %}
 	{% if home_position == 'bottom' %}
