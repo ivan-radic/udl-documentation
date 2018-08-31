@@ -38,13 +38,17 @@ debounce = (fn, delay) ->
 handleResize = (event) ->
 	breakPoint = 992 # Bootstrap large devices (desktops, 992px and up)
 	resizedWidth = window.innerWidth
+	# close the navbar menu no matter its status
+	removeClass(navbarMenuEle, 'show')
 	if resizedWidth < breakPoint
-		console.log "< 992 w: #{resizedWidth}"
 		# expand navbar when click the navbar
 		navbarEle.addEventListener('click', toggleNavbar)
+		# set the cursor to pointer because it has action
+		navbarEle.style.cursor = 'pointer'
 	else
-		console.log ">=992 w: #{resizedWidth}"
 		navbarEle.removeEventListener('click', toggleNavbar)
+		# set the cursor to default because it has no action anymore
+		navbarEle.style.cursor = 'default'
 	return null
 
 window.addEventListener 'resize', debounce(handleResize, 250)
