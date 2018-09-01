@@ -60,6 +60,10 @@ img {
 	&-action {
 		cursor: pointer;
 	}
+	&-menu {
+		max-height: 90vh;
+		overflow: auto;
+	}
 }
 
 .sticky-sidebar {
