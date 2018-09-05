@@ -18,6 +18,11 @@
 				</div>
 
 				<div class="col-12 col-lg-9">
+
+					{% unless site.github.owner_name == site.author_id %}
+					{% include fork-note.html %}
+					{% endunless %}
+
 					<main aria-label="Content">
 						<div class="container pt-4">
 							{{ content }}

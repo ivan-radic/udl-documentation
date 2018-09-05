@@ -56,6 +56,13 @@ img {
 // site styles
 // ===========
 
+.note {
+	padding: 1rem;
+	background-color: lightgoldenrodyellow;
+	border-left: 0.25rem solid khaki;
+	margin-bottom: 1rem;
+}
+
 #navbar-toggle {
 	&-action {
 		cursor: pointer;

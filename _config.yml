@@ -3,8 +3,11 @@
 title: UDL docs
 tagline: User Defined Language for Notepad++
 description: This site serves to demonstrate and document new UDL 2.1. UDL stands for User Defined Language, it is a feature of Notepad++ editor through which users can define their own syntax highlighting.
+original_site_url: https://ivan-radic.github.io/udl-documentation
 author: Ivan Radić
+author_id: ivan-radic
 author_url: https://github.com/ivan-radic
+# note: do not change author info, unless ownership of original repo is changed
 
 # Dev Env
 
