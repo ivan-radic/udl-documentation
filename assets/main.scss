@@ -52,6 +52,27 @@ img {
 	width: 100%;
 }
 
+// intentionally copy the styles from Github; easier to identify as code block
+.main code {
+	margin: 0;
+	padding: 0.2rem 0.4rem;
+	border-radius: 3px;
+	background-color: #eff0f1; // same as stack-overflow
+	color: #24292e;
+}
+.main pre {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: 3px;
+	line-height: 1.45;
+	background-color: #eff0f1; // same as stack-overflow
+}
+.main pre code {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
 
 // site styles
 // ===========
