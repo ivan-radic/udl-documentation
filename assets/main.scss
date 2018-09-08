@@ -77,6 +77,12 @@ img {
 // site styles
 // ===========
 
+.navbar .navbar-row .navbar-brand {
+	// override some styles on Bootstrap
+	font-weight: 450;
+	color: rgba(0, 0, 0, 0.7);
+}
+
 .note {
 	padding: 1rem;
 	background-color: lightgoldenrodyellow;
