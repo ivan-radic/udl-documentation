@@ -6,6 +6,8 @@
 
 $npp-green: {{ site.npp_ui_green }};
 $npp-orange: #e2911e;
+$npp-green-title: #2c3f18; // rgba(0, 0, 0, 0.7) on $npp-green
+$npp-green-subtitle: #516731; // rgba(0, 0, 0, 0.5) on $npp-green
 $body-border-style: 6px solid $npp-green;
 
 // override Bootstrap default styles
@@ -19,10 +21,10 @@ $link-color: $npp-orange;
 $link-hover-color: $npp-orange;
 
 // override nav-folder-menu defaults
-$nav-folder-menu-font-color: #566638; // solid color of navbar subtitle
-$nav-folder-menu-hover-bg-color: #566638; // solid color of navbar subtitle
-$nav-folder-menu-dot-color: #566638; // solid color of navbar subtitle
-$nav-folder-menu-current-font-color: #11140b; // solid color of navbar title
+$nav-folder-menu-font-color: $npp-green-subtitle;
+$nav-folder-menu-hover-bg-color: $npp-green-subtitle;
+$nav-folder-menu-dot-color: $npp-green-subtitle;
+$nav-folder-menu-current-font-color: $npp-green-title;
 
 @import "bootstrap";
 @import "menu-icon";
@@ -54,21 +56,21 @@ img {
 }
 
 // intentionally copy the styles from Github; easier to identify as code block
-.main code {
+.site code {
 	margin: 0;
 	padding: 0.2rem 0.4rem;
 	border-radius: 3px;
 	background-color: #eff0f1; // same as stack-overflow
 	color: #24292e;
 }
-.main pre {
+.site pre {
 	margin-bottom: 1rem;
 	padding: 1rem;
 	border-radius: 3px;
 	line-height: 1.45;
 	background-color: #eff0f1; // same as stack-overflow
 }
-.main pre code {
+.site pre code {
 	padding: 0;
 	border: none;
 	background-color: transparent;
@@ -78,11 +80,14 @@ img {
 // site styles
 // ===========
 
-.navbar .navbar-row .navbar-brand {
-	// override some styles on Bootstrap
-	font-weight: 450;
-	color: rgba(0, 0, 0, 0.7);
-}
+.site .navbar {
+	.navbar-brand {
+		color: $npp-green-title;
+	}
+	.navbar-text {
+		color: $npp-green-subtitle;
+	}
+} 
 
 .note {
 	padding: 1rem;
