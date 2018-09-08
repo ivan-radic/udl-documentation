@@ -6,6 +6,7 @@
 
 $npp-green: {{ site.npp_ui_green }};
 $npp-orange: #e2911e;
+$body-border-style: 6px solid $npp-green;
 
 // override Bootstrap default styles
 
@@ -129,6 +130,11 @@ img {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 	body {
-		border: 6px solid $npp-green;
+		border-top: $body-border-style;
+		border-right: $body-border-style;
+		border-left: $body-border-style;
+	}
+	.site-footer {
+		border-bottom: $body-border-style;
 	}
 }
