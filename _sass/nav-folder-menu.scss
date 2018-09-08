@@ -32,6 +32,7 @@ $nav-folder-menu-current-font-color: darkslategray !default;
 		font-size: 1.1rem;
 		&.current {
 			color: $nav-folder-menu-current-font-color;
+			font-weight: 500;
 		}
 		&.current:hover {
 			background: none;

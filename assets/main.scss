@@ -32,7 +32,7 @@ $nav-folder-menu-current-font-color: $npp-green-title;
 @import "sticky-footer";
 
 
-// quick fix #todo
+// quick fix
 // =========
 
 img {
@@ -90,10 +90,10 @@ img {
 } 
 
 .note {
-	padding: 1rem;
-	background-color: lightgoldenrodyellow;
-	border-left: 0.25rem solid khaki;
 	margin-bottom: 1rem;
+	padding: 1rem;
+	border-left: 0.25rem solid khaki;
+	background-color: lightgoldenrodyellow;
 }
 
 #navbar-toggle {
