@@ -6,38 +6,24 @@ The UDL docs site serves to demonstrate and document new UDL (User Defined Langu
 
 Original web address: [https://ivan-radic.github.io/udl-documentation/]()
 
-# Contributions
+## Contributions
 
 > *tl;tr* For pull request, please do check **Allow edits from maintainers**, and merge from **your new branch** into **my master branch**.
 
-## Proposing File Change
+Two ways to contribute to this repo:
 
-Sometimes you may want to fix a typo, or do some small changes that doesn't need a test, you can **propose file change** directly.
+1. Simple way: Directly propose file change(s) in Github.com
+2. Standard way: Fork and pull request model
 
-> reference: [Editing files in another user's repository - Github Help](https://help.github.com/articles/editing-files-in-another-user-s-repository/)
+For details, please see [CONTRIBUTING.md](CONTRIBUTING.md). There are some design matters for your reference.
 
-## Modifying This Site
+## Other things
 
-If you are going to create a new feature or fix a bug, please follow the "fork and pull" model.
+Site dev status:
 
-The best way is to edit and preview in your local machine. Running on local machine requires: `git`, `Ruby`, `RubyGems` and `bundler`. In Terminal, feel free to run:
-
-```shell
-git clone [your_fork_repo_url]
-bundle install # to install github-pages gem, jekyll, etc.
-source build.sh
-bundle exec jekyll serve # http://localhost:4000/udl-documentation/
-```
-
-# Little Notes
-
-For design and user experience, here are some directions to follow:
-
-- Keep the layout clean and simple
-- Easy to read
-- Prefer Github Pages (Jekyll) mechanism and practice
-
-# Other things
+- [x] responsive layout
+- [ ] better reading experience
+- [ ] supporting old devices, e.g. Chrome/Firefox on Windows XP
 
 For changes of UDL rules and help, please discuss on [official Notepad\+\+ community](https://notepad-plus-plus.org/community/).
 

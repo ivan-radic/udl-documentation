@@ -14,9 +14,13 @@ author_url: https://github.com/ivan-radic
 baseurl: /udl-documentation # for hosting in Github Pages
 host: 0.0.0.0
 exclude:
+  - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
   - README.md
+  - .stylelintrc.json
+  - build.sh
+  - coffeelint.json
   - vendor
   - "*.private.*"
 
