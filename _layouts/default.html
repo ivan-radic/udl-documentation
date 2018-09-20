@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body class="site">
+	<div class="sticky-footer-content bg-light">
+
+		{% include header.html %}
+
+		<div class="container-fluid below-header-fix">
+			<div class="row">
+
+				<div class="col-md-3 d-none d-lg-block pt-3">
+					<div class="nav-folder-menu sticky-sidebar">
+						{% include nav.html home_position='top' %}
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-9">
+
+					{% unless site.github.owner_name == site.author_id %}
+					{% include fork-note.html %}
+					{% endunless %}
+
+					<main aria-label="Content">
+						<div class="container pt-4">
+							{{ content }}
+						</div>
+					</main>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col d-lg-none">
+					<div class="container">
+						<div class="nav-folder-menu nav-folder-menu-bottom">
+							{% include nav.html home_position='bottom' %}
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	{% include footer.html %}
+
+	<script src="{{ 'assets/main.js?v=' | append: site.github.build_revision | relative_url }}" charset="utf-8"></script>
+</body>
+
+</html>

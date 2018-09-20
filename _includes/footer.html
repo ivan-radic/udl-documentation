@@ -1,6 +1,32 @@
-<p>
-    <small>
-        Theme: <a href="https://github.com/broccolini/dinky">Dinky</a> </br>
-        Author: <a href="http://github.com/ivan-radic">Ivan Radić</a>
-    </small>
-</p>
+<footer class="site-footer sticky-footer p-3 p-md-5">
+	<div class="container">
+		<ul class="nav">
+			<li class="nav-item">
+				<a href="https://github.com/notepad-plus-plus/notepad-plus-plus">Github</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://notepad-plus-plus.org/community">Community</a>
+			</li>
+			<li class="nav-item">
+				<a href="https://gitter.im/notepad-plus-plus/notepad-plus-plus">Chats</a>
+			</li>
+			<li class="nav-item">
+				<a href="http://docs.notepad-plus-plus.org/index.php/User_Defined_Languages">Wiki</a>
+			</li>
+		</ul>
+		<p>
+			{% if site.author_url or site.github.owner_url %}
+			<span class="text-nowrap">Maintained by <a href="{{ site.author_url | default: site.github.owner_url }}">{{ site.author | default: site.github.owner_name | escape }}</a>. </span>
+			{% endif %}
+			<span class="text-nowrap">Designed by <a href="https://github.com/Edditoria">Edditoria</a>. </span>
+			{% if site.github.repository_url %}
+			<span class="text-nowrap">Hosted on <a href="{{ site.github.repository_url }}">GitHub Pages</a>. </span>
+			{% endif %}
+		</p>
+		<p>
+			<span class="text-nowrap">{{ site.title | default: site.github.repository_name }} currently v2.1. </span>
+			<span class="text-nowrap">Code licensed <a href="https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE">GNU GPL v2</a>. </span>
+			<span class="text-nowrap">Docs <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</span>
+		</p>
+	</div>
+</footer>

@@ -1,2 +1,42 @@
-baseurl: /udl-documentation
+# Site Info
+
+title: UDL docs
+tagline: User Defined Language for Notepad++
+description: This site serves to demonstrate and document new UDL 2.1. UDL stands for User Defined Language, it is a feature of Notepad++ editor through which users can define their own syntax highlighting.
+original_site_url: https://ivan-radic.github.io/udl-documentation
+author: Ivan Radić
+author_id: ivan-radic
+author_url: https://github.com/ivan-radic
+# note: do not change author info, unless ownership of original repo is changed
+
+# Dev Env
+
+baseurl: /udl-documentation # for hosting in Github Pages
+host: 0.0.0.0
+exclude:
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .stylelintrc.json
+  - build.sh
+  - coffeelint.json
+  - vendor
+  - "*.private.*"
+
+# Build settings
+
+# theme: jekyll-theme-minimal # Github Pages theme for testing only
+theme: minima # default Jekyll theme
+npp_ui_green: "#ADCC6E"
 markdown: kramdown
+show_downloads: false
+# gems:
+#   - jekyll-feed
+#   - jekyll-redirect-from
+#   - jekyll-seo-tag
+#   - jekyll-sitemap
+#   - jekyll-avatar
+#   - jemoji
+#   - jekyll-mentions
+#   - jekyll-include-cache

@@ -1,0 +1,36 @@
+// pure css menu-icon
+
+// setup
+$menu-icon-height: 16px; // pixel in even number; be pixel perfect
+$menu-icon-line-width: 2px;
+$menu-icon-line-color: rgba(black, 0.6);
+
+
+$menu-icon-border: $menu-icon-line-width solid $menu-icon-line-color;
+$menu-icon-width: $menu-icon-height * 1.5;
+$menu-icon-offset: $menu-icon-line-width * 2;
+
+.menu-icon {
+	border-top: $menu-icon-border;
+	width: $menu-icon-width;
+	height: $menu-icon-height - $menu-icon-line-width;
+	margin-bottom: $menu-icon-offset;
+	&:before {
+		position: absolute;
+		top: ($menu-icon-height - $menu-icon-line-width) / 2;
+		left: 0;
+		width: $menu-icon-width;
+		height: $menu-icon-height - $menu-icon-line-width;
+		border-top: $menu-icon-border;
+		content: '';
+	}
+	&:after {
+		position: absolute;
+		top: $menu-icon-height - $menu-icon-line-width;
+		left: 0;
+		width: $menu-icon-width;
+		// height: $menu-icon-height - $menu-icon-line-width;
+		border-top: $menu-icon-border;
+		content: '';
+	}
+}

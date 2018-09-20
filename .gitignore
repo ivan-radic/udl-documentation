@@ -1,1 +1,8 @@
-_site/*
+# this repo
+# =========
+
+*.private.*
+.bundle/
+.sass-cache/
+_site/
+vendor/

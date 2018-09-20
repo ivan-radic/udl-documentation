@@ -1,0 +1,145 @@
+---
+---
+
+// favored Notepad++ styles
+// ========================
+
+$npp-green: {{ site.npp_ui_green }};
+$npp-orange: #e2911e;
+$npp-green-title: #2c3f18; // rgba(0, 0, 0, 0.7) on $npp-green
+$npp-green-subtitle: #516731; // rgba(0, 0, 0, 0.5) on $npp-green
+$body-border-style: 6px solid $npp-green;
+
+// override Bootstrap default styles
+
+$body-bg: $npp-green;
+$theme-colors: (
+	"primary": $npp-green,
+	"secondary": $npp-orange
+);
+$link-color: $npp-orange;
+$link-hover-color: $npp-orange;
+
+// override nav-folder-menu defaults
+$nav-folder-menu-font-color: $npp-green-subtitle;
+$nav-folder-menu-hover-bg-color: $npp-green-subtitle;
+$nav-folder-menu-dot-color: $npp-green-subtitle;
+$nav-folder-menu-current-font-color: $npp-green-title;
+
+@import "bootstrap";
+@import "menu-icon";
+@import "nav-folder-menu";
+@import "sticky-footer";
+
+
+// quick fix
+// =========
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	text-align: center;
+}
+
+.below-header-fix {
+	margin-top: 4rem;
+}
+
+.navbar-row {
+	position: relative;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+// intentionally copy the styles from Github; easier to identify as code block
+.site code {
+	margin: 0;
+	padding: 0.2rem 0.4rem;
+	border-radius: 3px;
+	background-color: #eff0f1; // same as stack-overflow
+	color: #24292e;
+}
+.site pre {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: 3px;
+	line-height: 1.45;
+	background-color: #eff0f1; // same as stack-overflow
+}
+.site pre code {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+
+// site styles
+// ===========
+
+.site .navbar {
+	.navbar-brand {
+		color: $npp-green-title;
+	}
+	.navbar-text {
+		color: $npp-green-subtitle;
+	}
+} 
+
+.note {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-left: 0.25rem solid khaki;
+	background-color: lightgoldenrodyellow;
+}
+
+#navbar-toggle {
+	&-action {
+		cursor: pointer;
+	}
+	&-menu {
+		max-height: 90vh;
+		overflow: auto;
+	}
+}
+
+.sticky-sidebar {
+	position: sticky;
+	top: 6rem;
+}
+
+.site-footer {
+	background-color: #6b5000;
+	color: wheat;
+	p {
+		margin-bottom: 0;
+		font-size: .8rem;
+	}
+	.nav {
+		margin-bottom: .6rem;
+		text-align: center;
+	}
+	.nav-item + .nav-item {
+		// margin-left: 1rem;
+		:before {
+			content: "|";
+			color: wheat;
+			margin: .5rem;
+		}
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	body {
+		border-top: $body-border-style;
+		border-right: $body-border-style;
+		border-left: $body-border-style;
+	}
+	.site-footer {
+		border-bottom: $body-border-style;
+	}
+}
