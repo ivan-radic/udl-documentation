@@ -1,4 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 # Site Info
+# =========
 
 title: UDL docs
 tagline: User Defined Language for Notepad++
@@ -10,28 +27,58 @@ author_url: https://github.com/ivan-radic
 # note: do not change author info, unless ownership of original repo is changed
 
 # Dev Env
+# =======
 
 baseurl: /udl-documentation # for hosting in Github Pages
 host: 0.0.0.0
 exclude:
   - CONTRIBUTING.md
-  - Gemfile
-  - Gemfile.lock
   - README.md
+  - .bundle/
   - .stylelintrc.json
   - build.sh
   - coffeelint.json
-  - vendor
   - "*.private.*"
+  # includes the list by Jekyll defaults:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
-# Build settings
+# Build Settings
+# ==============
 
-# theme: jekyll-theme-minimal # Github Pages theme for testing only
-theme: minima # default Jekyll theme
+theme: minima
 npp_ui_green: "#ADCC6E"
 markdown: kramdown
 show_downloads: false
-# gems:
+# plugins:
+#   - jekyll-feed
+
+# Information from Official Doc
+# =============================
+
+# https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins
+
+# GitHub Pages uses plugins that are enabled by default and cannot be disabled:
+
+#   - jekyll-coffeescript
+#   - jekyll-default-layout
+#   - jekyll-gist
+#   - jekyll-github-metadata
+#   - jekyll-optional-front-matter
+#   - jekyll-paginate
+#   - jekyll-readme-index
+#   - jekyll-titles-from-headings
+#   - jekyll-relative-links
+
+# Here are some notable gems.
+# To enable an optional plugin, you must add it to your _config.yml file.
+
+# plugins:
 #   - jekyll-feed
 #   - jekyll-redirect-from
 #   - jekyll-seo-tag
@@ -39,4 +86,3 @@ show_downloads: false
 #   - jekyll-avatar
 #   - jemoji
 #   - jekyll-mentions
-#   - jekyll-include-cache
