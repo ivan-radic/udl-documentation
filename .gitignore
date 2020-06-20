@@ -3,6 +3,11 @@
 
 *.private.*
 .bundle/
-.sass-cache/
-_site/
 vendor/
+
+# Jekyll default
+# ==============
+
+_site/
+.sass-cache/
+.jekyll-metadata
