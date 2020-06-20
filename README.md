@@ -4,11 +4,11 @@ This repo is the source of UDL documentations site, that is based on Jekyll and 
 
 The UDL docs site serves to demonstrate and document new UDL (User Defined Language), it is a feature of Notepad++ editor through which users can define their own syntax highlighting.
 
-Original web address: <https://ivan-radic.github.io/udl-documentation>
+Original web address: <https://ivan-radic.github.io/udl-documentation/>
 
 ## Contributions
 
-> *tl;tr* For pull request, please do check **Allow edits from maintainers**, and merge from **your new branch** into **my master branch**.
+> *tl;tr* For pull request, please do check **Allow edits from maintainers**, and merge from **your new branch** into **my gh-pages branch**.
 
 Two ways to contribute to this repo:
 

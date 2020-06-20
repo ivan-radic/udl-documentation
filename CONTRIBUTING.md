@@ -1,6 +1,6 @@
 # Contributing The UDL Site
 
-> *tl;tr* For pull request, please do check **Allow edits from maintainers**, and merge from **your new branch** into **my master branch**.
+> *tl;tr* For pull request, please do check **Allow edits from maintainers**, and merge from **your new branch** into **my gh-pages branch**.
 
 Thank you for efforts on improving this web site. There are two ways to contribute to this repo:
 
@@ -20,11 +20,20 @@ If you are going to create a new feature or fix a bug, please follow the "fork a
 The best way is to edit and preview in your local machine. Running on local machine requires: `git`, `Ruby`, `RubyGems` and `bundler`. In terminal, feel free to run:
 
 ```shell
-git clone [your_fork_repo_url]
+git clone <your_fork_repo_url>
 bundle install # to install github-pages gem, jekyll, etc.
 source build.sh
 bundle exec jekyll serve # http://localhost:4000/udl-documentation/
 ```
+
+## Optional Modification in Your Local Env
+
+To reduce dev env across machines, Ruby and bundler versions are fixed in config files. If you have difficulty on `bundle update` (Look at you, Windows!), please consider to change some configs:
+
+- Remove a line in `<Gemfile>`: `ruby '~> 2.x.x'` to tentatively use older Ruby.
+- Change the bundler version in `<Gemfile.lock>`: `BUNDLED WITH 2.x.x` to tentatively use the Bundler version in your system.
+
+Remember: Don't commit these changes.
 
 ## Little Notes on Site Design
 
