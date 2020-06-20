@@ -38,7 +38,6 @@ exclude:
   - .stylelintrc.json
   - build.sh
   - coffeelint.json
-  - "*.private.*"
   # includes the list by Jekyll defaults:
   - Gemfile
   - Gemfile.lock

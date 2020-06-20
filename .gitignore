@@ -1,7 +1,6 @@
 # this repo
 # =========
 
-*.private.*
 .bundle/
 vendor/
 
