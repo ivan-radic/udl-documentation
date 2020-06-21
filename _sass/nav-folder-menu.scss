@@ -60,9 +60,9 @@ $nav-folder-border-style: $nav-folder-dot-line-size dotted $nav-folder-menu-dot-
 			content: '';
 			position: absolute;
 			left: -15px;
-			bottom: -6px;
+			bottom: 2px;
 			display: block;
-			height: 31px;
+			height: 21px;
 			border-left: $nav-folder-border-style;
 		}
 		&:first-child {
@@ -85,13 +85,13 @@ $nav-folder-border-style: $nav-folder-dot-line-size dotted $nav-folder-menu-dot-
 	padding: 1.5rem 0;
 	li {
 		&:before {
-			top: 1.5rem;
+			top: 16px * 1.5;
 			height: 27px;
 			border-top: $nav-folder-border-style;
 			border-bottom: none; // override .nav-folder-menu
 		}
 		&:after {
-			bottom: 15px;
+			bottom: 25px;
 		}
 		&:first-child {
 			margin: 0;
