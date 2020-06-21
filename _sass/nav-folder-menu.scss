@@ -3,6 +3,9 @@ $nav-folder-menu-hover-bg-color: slategray !default;
 $nav-folder-menu-hover-font-color: white !default;
 $nav-folder-menu-dot-color: slategray !default;
 $nav-folder-menu-current-font-color: darkslategray !default;
+$nav-folder-line-height: 16px * 3;
+$nav-folder-dot-line-size: 1px;
+$nav-folder-border-style: $nav-folder-dot-line-size dotted $nav-folder-menu-dot-color;
 
 .nav-folder-menu {
 	padding: 1rem 0 2rem 0;
@@ -24,7 +27,7 @@ $nav-folder-menu-current-font-color: darkslategray !default;
 		width: 100%;
 		margin: 0;
 		padding: 0 0 0 2rem;
-		line-height: 3rem;
+		line-height: $nav-folder-line-height;
 	}
 	li {
 		position: relative;
@@ -50,8 +53,8 @@ $nav-folder-menu-current-font-color: darkslategray !default;
 			display: block;
 			width: 11px;
 			height: 25px;
-			border-bottom: 1px dotted $nav-folder-menu-dot-color;
-			border-left: 1px dotted $nav-folder-menu-dot-color;
+			border-bottom: $nav-folder-border-style;
+			border-left: $nav-folder-border-style;
 		}
 		&:after {
 			content: '';
@@ -60,7 +63,7 @@ $nav-folder-menu-current-font-color: darkslategray !default;
 			bottom: -6px;
 			display: block;
 			height: 31px;
-			border-left: 1px dotted $nav-folder-menu-dot-color;
+			border-left: $nav-folder-border-style;
 		}
 		&:first-child {
 			margin: 0 0 0 -1.33rem;
@@ -84,7 +87,7 @@ $nav-folder-menu-current-font-color: darkslategray !default;
 		&:before {
 			top: 1.5rem;
 			height: 27px;
-			border-top: 1px dotted $nav-folder-menu-dot-color;
+			border-top: $nav-folder-border-style;
 			border-bottom: none; // override .nav-folder-menu
 		}
 		&:after {
