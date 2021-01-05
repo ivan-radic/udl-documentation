@@ -26,7 +26,7 @@ $nav-folder-menu-hover-bg-color: $npp-green-subtitle;
 $nav-folder-menu-dot-color: $npp-green-subtitle;
 $nav-folder-menu-current-font-color: $npp-green-title;
 
-@import "bootstrap";
+@import "bootstrap/scss/bootstrap";
 @import "menu-icon";
 @import "nav-folder-menu";
 @import "sticky-footer";
