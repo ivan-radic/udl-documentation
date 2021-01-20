@@ -9,7 +9,7 @@ Delimiters
 
 This section describes new options users have when defining delimiters.
 
-Delimiters changed a lot in UDL 2.1.    
+Delimiters changed a lot in UDL 2.1.<br>
 The most obvious difference is the GUI, so we'll start with that.
 
 ![]({{ site.baseurl}}/images/delimiters_01.png)
@@ -18,7 +18,7 @@ Just like in case of keywords, number of delimiter lists has been expanded to ei
 
 #### Example 1:
 
-First example is a simple C++ string.    
+First example is a simple C++ string.<br>
 Nothing fancy here.
 
 ![]({{ site.baseurl}}/images/delimiters_02.png)
@@ -27,7 +27,7 @@ Nothing fancy here.
 
 #### Example 2:
 
-This is little more interesting.     
+This is little more interesting.<br>
 It is an attempt to define a line comment.
 
 Notice how UDL's special operator __(( ))__ transforms string "__EOL__" into an end of line character. In fact it transforms it into a vector of three strings:
@@ -45,7 +45,7 @@ So, it will find a line end regardless of your file format (unix/dos/osx)
 
 #### Example 3:
 
-Another interesting example.    
+Another interesting example.<br>
 C++ line comments support continuation to the next line, and there is just one continue character: backslash (**\\**)
 
 But there is a catch, C++ standard also defines something call digraphs and trigraphs. And a trigraph sequence for backslash is a "__??/__" (question mark twice than forward slash)
@@ -64,10 +64,10 @@ In this example we define two different line comments.
     second one is Python style:   #
 
 
-First thing to notice is how I aligned everything vertically.    
+First thing to notice is how I aligned everything vertically.<br>
 In general, white space is not important when defining keywords, so you can use it any way you like it. It will be filtered out automatically.
 
-Second thing to understand is grouping of Continue characters.    
+Second thing to understand is grouping of Continue characters.<br>
 C++ line comment (the first group), defines two continue characters, Python line comment defines just one.
 
 By using grouping with operator __(( ))__ I was able to keep the logic of indexing and vertical aligning (both explained in [comments section]({{ site.baseurl }}/comments.html)) and to make sure that "__??/__" applies only to C++ line comments.
@@ -78,7 +78,7 @@ By using grouping with operator __(( ))__ I was able to keep the logic of indexi
 
 #### Example 5:
 
-If you need to use "((" and "))" as delimiter's open/close keywords, just define them inside of __(( ))__ operator.    
+If you need to use "((" and "))" as delimiter's open/close keywords, just define them inside of __(( ))__ operator.<br>
 Also this is the only exception of the rule that whitespace can be used freely. When defining "__))__" inside of special operator __(( ))__ you must "glue" four consecutive close braces. Otherwise you will define an empty keyword set.
 
 ![]({{ site.baseurl}}/images/delimiters_10.png)
@@ -91,7 +91,7 @@ Comments and delimiters support nesting, and this can be used to define some com
 
 #### Example 6:
 
-CoffeScript language defines its own regular expression syntax that is called hereRegex.    
+CoffeScript language defines its own regular expression syntax that is called hereRegex.<br>
 Funny thing about hereRegex syntax  is that supports comments inside regular expression, but:
 
     # this is a comment

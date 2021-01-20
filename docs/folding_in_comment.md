@@ -7,8 +7,8 @@ permalink: /folding-in-comment/
 Folding in comment
 ==================
 
-This keyword set is new in UDL 2.1.    
-It allows you to fold anything as long as your language supports comments.   
+This keyword set is new in UDL 2.1.<br>
+It allows you to fold anything as long as your language supports comments.<br>
 Let's demonstrate it by using C++ comments.
 
 #### Example 1
@@ -23,34 +23,35 @@ Notice how comments that have 'folding in comment' keywords embedded in them, cr
 
 #### Example 2
 
-Let's steal some ideas from C#. Our code will be organized in '__regions__'.    
+Let's steal some ideas from C#. Our code will be organized in '__regions__'.<br>
 ![]({{ site.baseurl}}/images/folding_in_comment_03.png)
 
-One keyword group will be anything that starts with 'at sign' (@), so check Prefix mode option.     
+One keyword group will be anything that starts with 'at sign' (@), so check Prefix mode option.<br>
 ![]({{ site.baseurl}}/images/folding_in_comment_04.png)
 
-We'll define comments as standard C++ comments:    
+We'll define comments as standard C++ comments:
 
     /* cpp comment */
     // cpp line comment
 
-The important thing here is to allow nesting of keyword group two (words that start with '@' sign)    
+The important thing here is to allow nesting of keyword group two (words that start with '@' sign)
+
 ![]({{ site.baseurl}}/images/folding_in_comment_05.png)
 
 
-Finally, the magic happens.     
-I organized my code in three logical groups:    
+Finally, the magic happens.<br>
+I organized my code in three logical groups:
 
-- initialization    
-- execution         
-- clean up          
+- initialization
+- execution
+- clean up
 
-These three keywords are not defined anywhere, I can call my regions anything I like, as long as I use '__@__' prefix.    
+These three keywords are not defined anywhere, I can call my regions anything I like, as long as I use '__@__' prefix.<br>
 
 Notice how '__region__' and '__end__' keywords have the same color as comments, but __region name__ uses distinct color to be easily noticeable.
 
 ![]({{ site.baseurl}}/images/folding_in_comment_06.png)
 
-Folding in comment keywords support multi-part keywords too.    
+Folding in comment keywords support multi-part keywords too.
 
 In the end, I would just like to say that, if used properly, this could be the single most useful feature of UDL 2.1.

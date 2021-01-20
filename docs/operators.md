@@ -7,7 +7,7 @@ permalink: /operators/
 Operators
 =========
 
-This section gives short explanation of operator options.    
+This section gives short explanation of operator options.<br>
 For detailed discussion about __"forward"__ and __"backward"__ search, please read section [Introduction]({{ site.baseurl }}/index.html).
 
 ![Operators dialog]({{ site.baseurl}}/images/operators_01.png)
@@ -16,7 +16,7 @@ Operators are split into two groups: Operators1 and Operators2.
 
 #### Operators1
 
-This is a __"forward"__ search group.      
+This is a __"forward"__ search group.<br>
 These operators can be "glued" to other keywords. You can use it to define operators like:
 
     ! && << >> + - _ %
@@ -25,7 +25,7 @@ In short: these should be special non-alphanumeric characters
 
 #### Operators2
 
-This is a __"backward"__ search group.     
+This is a __"backward"__ search group.<br>
 These operators can NOT be "glued" to other keywords. They must be separated from rest of the code by whitespace or by other "forward" search keywords.You can use it to define operators like:
 
     and or not in out like

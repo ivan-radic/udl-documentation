@@ -13,5 +13,5 @@ UDL stands for **U**ser **D**efined **L**anguage, it is a feature of [Notepad++ 
 
 Also, please note that this is documentation site only, source code is available at [official Notepad++ github page](https://github.com/notepad-plus-plus/notepad-plus-plus)
 
-Thank you and best regards,    
+Thank you and best regards,<br>
 Ivan Radić

@@ -11,29 +11,29 @@ This section describes new options user have when defining comments.
 
 ![]({{ site.baseurl}}/images/comments_01.png)
 
-Comments handling in UDL 2.1 changed significantly.    
+Comments handling in UDL 2.1 changed significantly.<br>
 Let's start with the most obvious part, the GUI.
 
 ### Line comments:
-Line comments now support three set of keywords: open, continue and close.    
+Line comments now support three set of keywords: open, continue and close.
 
-UDL2.1 has an option to force line comments to start at the beginning of line.    
+UDL2.1 has an option to force line comments to start at the beginning of line.<br>
 When this option is switched on, line comments will be recognized only if they are located at the beginning of line. Anywhere else, they will be treated as default text.
 
-__Open:__    
-In most languages this is the only one you'll need. Define your comment line starters here: # // !    
-Example:     
+__Open:__<br>
+In most languages this is the only one you'll need. Define your comment line starters here: # // !<br>
+Example:
 
     // line comment
 
-__Continue:__    
-If this string is at the end of line comment, than line comment extends to following line: e.g. \    
-Example:    
+__Continue:__<br>
+If this string is at the end of line comment, than line comment extends to following line: e.g. \\<br>
+Example:
 
-    // line comment \    
+    // line comment \
     that extends to next line
 
-__Close:__     
+__Close:__<br>
 This is a very rare feature, but in some languages comments have start and end markers, but if end marker is missing, a comment automatically becomes a line comment and ends at the end of current line. This is where you need to define close string, e.g.: ! Example:
 
         // line comment ! text that doesn't belong to a comment
@@ -96,15 +96,15 @@ As you can see, UDL 2.1 happily allows you to have nested comments. But there is
 
 ![]({{ site.baseurl}}/images/comments_09.png)
 
-And voila !!!    
-Now your nesting is not only allowed, it is also highlighted.    
+And voila !!!<br>
+Now your nesting is not only allowed, it is also highlighted.<br>
 Call me a geek that gets excited over nothing, but I think this is really cool :-)
 
 ![]({{ site.baseurl}}/images/comments_10.png)
 
 #### Example 3:
 
-In this example we will highlight nested line comments.   
+In this example we will highlight nested line comments.<br>
 Just like in example 2, we define similar yet different styles, and allow nesting of Line comments within Comments.
 
 ![]({{ site.baseurl}}/images/comments_11.png)
@@ -115,13 +115,13 @@ If you want Line comments to look like Comments, but to be highlighted when nest
 
 ![]({{ site.baseurl}}/images/comments_12.png)
 
-Just define Delimiter 2 (any delimiter will do, I'll use this one for demonstration) like in previous picture. __((EOL))__ is a special keyword that is expanded to a vector of three strings:    
+Just define Delimiter 2 (any delimiter will do, I'll use this one for demonstration) like in previous picture. __((EOL))__ is a special keyword that is expanded to a vector of three strings:
 
     "\r\n"
     "\n"
     "r"
 
-So, that every new line combination is covered.     
+So, that every new line combination is covered.<br>
 __((EOL))__ has been introduced just for this reason. It allows users to define Delimiter equivalent of Line comments.
 
 Notice how I wrapped __EOL__ with special __double brace operator__. This operator has a special meaning in UDL 2.1 and it is explained in more detail in [Delimiters section]({{ site.baseurl }}/delimiters.html). For this example it is enough to remember that it expands __EOL__ into an __end of line character__.
@@ -146,7 +146,7 @@ As you can see, nesting of delimiters that imitate line comments works just as g
 
 If you were not scrolling too fast, you might have noticed a small check box at the top: Allow folding of comments
 
-Such small feature, but it took so much time to develop it.    
+Such small feature, but it took so much time to develop it.<br>
 Let's explore it.
 
 ![]({{ site.baseurl}}/images/comments_16.png)
@@ -180,12 +180,12 @@ Set Allow folding of comments, and you'll get rid of annoying comments simply by
 ![]({{ site.baseurl}}/images/comments_19.png)
 
 
-And there you go.     
+And there you go.<br>
 No more unnecessary scrolling :-)
 
 On the other hand, if you find this feature tiresome, just disable it.
 
 
 ## Conclusion
-As you can see, comment handling in UDL 2.1 changed quite a bit from UDL 1.0.     
+As you can see, comment handling in UDL 2.1 changed quite a bit from UDL 1.0.<br>
 I tried to make it intuitive and easy, and I hope users will like it as much as I do.
