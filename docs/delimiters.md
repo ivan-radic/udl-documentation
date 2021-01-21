@@ -4,8 +4,7 @@ navigation: Delimiters
 permalink: /delimiters/
 ---
 
-Delimiters
-==========
+# Delimiters
 
 This section describes new options users have when defining delimiters.
 
@@ -16,7 +15,10 @@ The most obvious difference is the GUI, so we'll start with that.
 
 Just like in case of keywords, number of delimiter lists has been expanded to eight (as suggested by Don), if more is needed, please state so in discussion on Notepad++ forum. And each Delimiter now accepts its own Escape char. There have been numerous changes under the hood also, and we'll cover them here through a series of short examples.
 
-#### Example 1:
+
+## Usage examples
+
+### Example 1
 
 First example is a simple C++ string.<br>
 Nothing fancy here.
@@ -25,7 +27,7 @@ Nothing fancy here.
 
 ![]({{ site.baseurl}}/images/delimiters_03.png)
 
-#### Example 2:
+### Example 2
 
 This is little more interesting.<br>
 It is an attempt to define a line comment.
@@ -36,14 +38,13 @@ Notice how UDL's special operator __(( ))__ transforms string "__EOL__" into an 
     "\n"
     "\r"
 
-
 So, it will find a line end regardless of your file format (unix/dos/osx)
 
 ![]({{ site.baseurl}}/images/delimiters_04.png)
 
 ![]({{ site.baseurl}}/images/delimiters_05.png)
 
-#### Example 3:
+### Example 3
 
 Another interesting example.<br>
 C++ line comments support continuation to the next line, and there is just one continue character: backslash (**\\**)
@@ -56,7 +57,7 @@ So, to have complete definition of C++ line comments, one must define both conti
 
 ![]({{ site.baseurl}}/images/delimiters_07.png)
 
-#### Example 4:
+### Example 4
 
 In this example we define two different line comments.
 
@@ -76,7 +77,7 @@ By using grouping with operator __(( ))__ I was able to keep the logic of indexi
 
 ![]({{ site.baseurl}}/images/delimiters_09.png)
 
-#### Example 5:
+### Example 5
 
 If you need to use "((" and "))" as delimiter's open/close keywords, just define them inside of __(( ))__ operator.<br>
 Also this is the only exception of the rule that whitespace can be used freely. When defining "__))__" inside of special operator __(( ))__ you must "glue" four consecutive close braces. Otherwise you will define an empty keyword set.
@@ -85,11 +86,12 @@ Also this is the only exception of the rule that whitespace can be used freely. 
 
 ![]({{ site.baseurl}}/images/delimiters_11.png)
 
+
 ## Nesting of delimiters
 
 Comments and delimiters support nesting, and this can be used to define some complex operations.
 
-#### Example 6:
+### Example 6
 
 CoffeScript language defines its own regular expression syntax that is called hereRegex.<br>
 Funny thing about hereRegex syntax  is that supports comments inside regular expression, but:
@@ -99,7 +101,6 @@ Funny thing about hereRegex syntax  is that supports comments inside regular exp
 
 
 Comments within hereRegex are everything after # character, but only if it is not followed by '{'. How do we solve this puzzle in UDL 2.1?
-
 
 We need to define three delimiters.
 

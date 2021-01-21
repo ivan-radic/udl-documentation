@@ -4,8 +4,7 @@ navigation: Default
 permalink: /default/
 ---
 
-Defaults
-========
+# Defaults
 
 This is the simplest option. You can only change styler of default text.
 

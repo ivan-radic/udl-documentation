@@ -4,12 +4,12 @@ navigation: Folding in code
 permalink: /folding-in-code/
 ---
 
-Folding in code
-===============
+# Folding in code
 
 Folding in code is quite different in UDL 2.1. Instead of two keyword sets (open and close), now we have three keyword sets (open, middle and close). Also, there are two Folding in code  groups: one for [forward (style1)]([Introduction]({{ site.baseurl }}/index.html)) and one for [backward (style2)]([Introduction]({{ site.baseurl }}/index.html)) search.
 
-#### Example 1
+## Example 1
+
 This is a typical C++ folding definition.<br>
 Curly braces represent folding points in the code and preprocessor is also supported (for this demo not all statements were defined)
 
@@ -26,13 +26,13 @@ As you can see both Folding 1 and Folding 2 create folding points, but they work
 __Note__: forward and backward search concept is explained in more detail in [Introduction]({{ site.baseurl }}/index.html) page.<br>
 You should read that part if you haven't already.
 
-#### Example 2
+## Example 2
 
 UDL 2.1 will automatically create middle folding point if open folding point is followed by a close folding point on the same line.
 
 ![]({{ site.baseurl}}/images/folding_in_code_03.png)
 
-#### Example 3
+## Example 3
 
 Use of multi-part keywords is supported in Folder in code 2, as you can see in this example.
 

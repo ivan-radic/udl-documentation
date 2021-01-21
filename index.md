@@ -4,8 +4,7 @@ navigation: Home
 permalink: //
 ---
 
-Welcome to UDL documentation site
-=================================
+# Welcome to UDL documentation site
 
 This page serves to demonstrate and document new UDL 2.1.
 

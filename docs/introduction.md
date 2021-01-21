@@ -4,8 +4,7 @@ navigation: Introduction
 permalink: /introduction/
 ---
 
-Introduction to UDL 2 code parser
-=================================
+# Introduction to UDL 2 code parser
 
 This section explains what "__backward__" and "__forward__" search is.<br>
 Users should understand this part before proceeding to read about other UDL 2.1 features.
@@ -14,7 +13,6 @@ Users should understand this part before proceeding to read about other UDL 2.1 
 ## Introduction to UDL 1.0 internal logic
 
 ![]({{ site.baseurl}}/images/introduction_01.png)
-
 
 In this picture you can see a set of three keywords.<br>
 How did UDL 1.0 recognized each one?<br>
@@ -25,9 +23,10 @@ The simplest explanation would be something like this:
 1. if it detects a keyword, it sets appropriate styler (in this case keyword1 styler), and sets new "search start point" one char after space, i.e. position 6.
 1. now it repeats the process for other keywords.
 
+One obvious limitation is that you have to have space around your keywords, otherwise UDL 1.0 won't recognize them. There were some exceptions from this rule, e.g. operators in UDL 1.0 are just one charecter long, so it was possible to test each character directly and detect an operator. But generally, keywords had to be surounded by whitespace to be correctly recognized.
 
-One obvious limitation is that you have to have space around your keywords, otherwise UDL 1.0 won't recognize them. There were some exceptions from this rule, e.g. operators in UDL 1.0 are just one charecter long, so it was possible to test each character directly and detect an operator. But generally, keywords had to be surounded by whitespace to be correctly recognized.<br>
 I call this aproach "__backwards__" detection, because keywords are detected in backward direction (e.g. keyword "first" is detected only after UDL reaches position 5). And yes, I do understand what "backwards" means in English, but I am not a native speaker, so bear with me, I mean nothing offensive.
+
 
 ## Introduction to UDL 2.1 internal logic
 
@@ -45,19 +44,23 @@ What we have here is a combination of two keywords ("first" and "second") connec
 
 So, UDL 2.1 uses a cobmination of "forward" and "backward" search in order to detect keywords that are "glued" together. And all keywords in UDL 2.1 are diveded in two basic groups which I call "backwards" and "forwards" (feel free to suggest a better name for these).
 
+
 ## Complete list of "backwards" and "forwards" keywords
 
-#### Backwards:
-Keywords 1-8<br>
-Folding in comment<br>
-Operators2
+Backwards:
 
-#### Forwards:
-Folding in code<br>
-Comments<br>
-Operators1<br>
-Delimiters 1-8<br>
-Numbers
+- Keywords 1-8
+- Folding in comment
+- Operators2
+
+Forwards:
+
+- Folding in code
+- Comments
+- Operators1
+- Delimiters 1-8
+- Numbers
+
 
 ## More on "forward" and "backward" detection logic
 
@@ -71,8 +74,7 @@ Python style:
 
     and or not
 
-
-#### Forward search example:
+### Forward search example
 
 ![]({{ site.baseurl}}/images/introduction_03.png)
 
@@ -86,13 +88,11 @@ Lets follow what happens in the background. For example, we'll focus on && opera
 Lets repeat that again.<br>
 In C++ an operator is always an operator and can never be something else, like part of another keyword or variable name. So, in forward search, there are no false positives, and it is not important what follows before or after forward keyword.
 
-
-## Backward search example:
+### Backward search example
 
 ![]({{ site.baseurl}}/images/introduction_04.png)
 
 ![]({{ site.baseurl}}/images/introduction_05.png)
-
 
 Python boolean operators are normal English words and or not, very similar to other Python keywords. Unlike in C++, Python operators can easily be part of other keywords or variable names.
 
