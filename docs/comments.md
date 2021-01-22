@@ -23,24 +23,30 @@ When this option is switched on, line comments will be recognized only if they a
 
 ### Open
 
-In most languages this is the only one you'll need. Define your comment line starters here: # // !<br>
+In most languages this is the only one you'll need. Define your comment line starters here: `#`, `//`, `!`<br>
 Example:
 
-    // line comment
+```
+// line comment
+```
 
 ### Continue
 
-If this string is at the end of line comment, than line comment extends to following line: e.g. \\<br>
+If this string is at the end of line comment, than line comment extends to following line: e.g. `\`<br>
 Example:
 
-    // line comment \
-    that extends to next line
-
+```
+// line comment \
+   that extends to next line
+```
 ### Close
 
-This is a very rare feature, but in some languages comments have start and end markers, but if end marker is missing, a comment automatically becomes a line comment and ends at the end of current line. This is where you need to define close string, e.g.: ! Example:
+This is a very rare feature, but in some languages comments have start and end markers, but if end marker is missing, a comment automatically becomes a line comment and ends at the end of current line. This is where you need to define close string, e.g.: `!`<br>
+Example:
 
-        // line comment ! text that doesn't belong to a comment
+```
+// line comment ! text that doesn't belong to a comment
+```
 
 This is a very "basic" demonstration, but it serves its purpose well.
 
@@ -55,8 +61,10 @@ This is a very "basic" demonstration, but it serves its purpose well.
 
 Comments are defined in a way that is similar to UDL 1.0. You just create a list of strings that represent comment start position and comment end position. But there is a hidden feature here. In picture 1, notice vertical position of Open and Close edit boxes! Notice how I defined two separate comment pairs and how they align vertically. I wanted to define these two comment sets:
 
-    /* this is a C language comment */
-    /+ this is a D language comment +/
+```
+/* this is a C language comment */
+/+ this is a D language comment +/
+```
 
 Now, lets try to nest these two comment types, to see the difference between UDL 1.0 and UDL 2.x
 
@@ -64,13 +72,13 @@ This is an UDL 1.0 screen capture.
 
 ![]({{ site.baseurl}}/images/comments_03.png)
 
-Comments are underlined so it would be more obvious where they end. Notice how "__*/__" string always ends a comment!! This happens because UDL 1.0 simply goes through a list of comment close strings, and as soon as it finds the first one to match, it accepts it as a comment end. UDL 1.0 has no way to connect matching open/close strings. It simply settles with the first one it can find, which works great if you have just one pair. If you have more, nesting will break, as demonstrated in line 4.
+Comments are underlined so it would be more obvious where they end. Notice how `*/` string always ends a comment!! This happens because UDL 1.0 simply goes through a list of comment close strings, and as soon as it finds the first one to match, it accepts it as a comment end. UDL 1.0 has no way to connect matching open/close strings. It simply settles with the first one it can find, which works great if you have just one pair. If you have more, nesting will break, as demonstrated in line 4.
 
 This is an UDL 2.1 screen capture.
 
 ![]({{ site.baseurl}}/images/comments_04.png)
 
-Notice how in line 4, UDL 2.1 correctly highlights D-style comments, even if there is a "__*/__" within comment. This is possible because UDL 2.1 uses indexes to match correct close string. When Open string is found, its index is recorded internally (e.g. for "/+", index is 1). That means that a comment can be closed only by a Close string of the same index.
+Notice how in line 4, UDL 2.1 correctly highlights D-style comments, even if there is a `*/` within comment. This is possible because UDL 2.1 uses indexes to match correct close string. When Open string is found, its index is recorded internally (e.g. for `/+`, index is 1). That means that a comment can be closed only by a Close string of the same index.
 
 So, users can just vertically align open and close strings, and UDL 2.1 will take care of the rest.
 
@@ -121,9 +129,11 @@ If you want Line comments to look like Comments, but to be highlighted when nest
 
 Just define Delimiter 2 (any delimiter will do, I'll use this one for demonstration) like in previous picture. __((EOL))__ is a special keyword that is expanded to a vector of three strings:
 
-    "\r\n"
-    "\n"
-    "r"
+```
+\r\n
+\n
+\r
+```
 
 So, that every new line combination is covered.<br>
 __((EOL))__ has been introduced just for this reason. It allows users to define Delimiter equivalent of Line comments.

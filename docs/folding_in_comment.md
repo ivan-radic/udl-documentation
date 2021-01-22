@@ -26,16 +26,18 @@ Let's steal some ideas from C#. Our code will be organized in '__regions__'.
 
 ![]({{ site.baseurl}}/images/folding_in_comment_03.png)
 
-One keyword group will be anything that starts with 'at sign' (@), so check Prefix mode option.
+One keyword group will be anything that starts with 'at sign' `@`, so check Prefix mode option.
 
 ![]({{ site.baseurl}}/images/folding_in_comment_04.png)
 
 We'll define comments as standard C++ comments:
 
-    /* cpp comment */
-    // cpp line comment
+```
+/* cpp comment */
+// cpp line comment
+```
 
-The important thing here is to allow nesting of keyword group two (words that start with '@' sign)
+The important thing here is to allow nesting of keyword group two (words that start with `@` sign)
 
 ![]({{ site.baseurl}}/images/folding_in_comment_05.png)
 
@@ -46,9 +48,9 @@ I organized my code in three logical groups:
 - execution
 - clean up
 
-These three keywords are not defined anywhere, I can call my regions anything I like, as long as I use '__@__' prefix.
+These three keywords are not defined anywhere, I can call my regions anything I like, as long as I use `@` prefix.
 
-Notice how '__region__' and '__end__' keywords have the same color as comments, but __region name__ uses distinct color to be easily noticeable.
+Notice how `region` and `end` keywords have the same color as comments, but `@region_name` uses distinct color to be easily noticeable.
 
 ![]({{ site.baseurl}}/images/folding_in_comment_06.png)
 

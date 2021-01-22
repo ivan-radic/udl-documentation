@@ -18,7 +18,9 @@ Operators are split into two groups: Operators1 and Operators2.
 This is a __"forward"__ search group.<br>
 These operators can be "glued" to other keywords. You can use it to define operators like:
 
-    ! && << >> + - _ %
+```
+! && << >> + - _ %
+```
 
 In short: these should be special non-alphanumeric characters
 
@@ -27,7 +29,9 @@ In short: these should be special non-alphanumeric characters
 This is a __"backward"__ search group.<br>
 These operators can NOT be "glued" to other keywords. They must be separated from rest of the code by whitespace or by other "forward" search keywords.You can use it to define operators like:
 
-    and or not in out like
+```
+and or not in out like
+```
 
 In short: operators that look like keywords
 

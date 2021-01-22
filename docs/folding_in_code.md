@@ -18,8 +18,8 @@ Curly braces represent folding points in the code and preprocessor is also suppo
 There are two important things here.<br>
 As you can see both Folding 1 and Folding 2 create folding points, but they work differently.
 
-- Folding 1 (the curly braces) is detected using forward search. It means these keywords can be "glued" to some other keyword. In this case opening curly brace stands next to closing round brace, and in line 12 around word "int"
-- Folding 2 (preprocessor stuff) works when surrounded by white space, but not when glued to word "UNICODE", as demonstrated in line 14
+- Folding 1 (the curly braces) is detected using forward search. It means these keywords can be "glued" to some other keyword. In this case opening curly brace stands next to closing round brace, and in line 12 around word `int`
+- Folding 2 (preprocessor stuff) works when surrounded by white space, but not when glued to word `UNICODE`, as demonstrated in line 14
 
 ![]({{ site.baseurl}}/images/folding_in_code_02.png)
 

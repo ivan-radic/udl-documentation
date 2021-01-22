@@ -19,22 +19,29 @@ New interface and logical organization of code designed by CChris was used in ve
 
 Are supported automatically by UDL.
 
-- __0123456789__
-- __123__
-- __987__
+```
+0123456789
+123
+987
+```
 
 ## Number prefixes 1
 
 Allows to define number prefixes that will be used with __decimal digits only__:
 
-- __B1011__
-- __O12345670__
-- __D1234567890__
+```
+B1011
+O12345670
+D1234567890
+```
 
 ## Number prefixes 2
 
-Allows to define number prefixes that will be used with decimal digits and __extended with Extras1__:<br>
-**0x**1234567890**ABCDEF**
+Allows to define number prefixes that will be used with decimal digits and __extended with Extras1__:
+
+```
+0x1234567890ABCDEF
+```
 
 - This will be mostly used for hex prefixes.
 - Note that even standard C/C++ prefix "0x" must be defined here, as it is not supported by default.
@@ -43,8 +50,10 @@ Allows to define number prefixes that will be used with decimal digits and __ext
 
 If you define "__0x__" hex prefix in Number prefixes 2, then add here "__A B C D E F a b c d e f__"
 
-- __0x1234__
-- __0xABC__
+```
+0x1234
+0xABC
+```
 
 ## Extra characters 2
 
@@ -54,27 +63,33 @@ These extra characters are used exactly like Extras1 but Extras2 are used in com
 
 Some languages define HEX notifications as a suffix. Let's use __'H__ as an example:
 
-- __1234567890ABCDEF'H__
-- __ABC'H__
-- __123'H__
+```
+1234567890ABCDEF'H
+ABC'H
+123'H
+```
 
 ## Suffix characters 2
 
 This one works exactly like Prefix1 option, just works from the other end : Let's use "__B O D__" as examples:
 
-- __1011B__
-- __01234567O__
-- __0123456789D__
+```
+1011B
+01234567O
+0123456789D
+```
 
-Or, you can use it for financial records, e.g. __100€__ or __200$__
+Or, you can use it for financial records, e.g. `100€` or `200$`
 
 ## Range symbols
 
 Sometimes you want to express number ranges:
 
-- __100-200__
-- __200::300__
-- __300-->400__
+```
+100-200
+200::300
+300-->400
+```
 
 ## Sum up
 
@@ -82,7 +97,7 @@ Sometimes you want to express number ranges:
 - __Prefix2__ accepts numbers and __Extras1__
 - __Suffix1__ accepts numbers and __Extras2__
 
-Also worth noting is the fact that UDL 2.0 restricts numbers to have just one decimal dot (in UDL 1.0 stuff like 1.2.3.4.5.6.7.8.9 was treated as a single number).
+Also worth noting is the fact that UDL 2.0 restricts numbers to have just one decimal dot (in UDL 1.0 stuff like `1.2.3.4.5.6.7.8.9` was treated as a single number).
 
 UDL 2.1 allows user selection of decimal point character (dot, comma or both).
 
@@ -108,17 +123,19 @@ e.g. If you define "0x" hex prefix, then add here "__A B C D E F a b c d e f__"
 
 ### Optional sufixes for numbers
 
-This one is useful for financial records, e.g. __100€__ or __200$__
+This one is useful for financial records, e.g. `100€` or `200$`
 
 ### Range symbols
 
 Sometimes you want to express number ranges:
 
-- __100-200__
-- __200::300__
-- __300-->400__
+```
+100-200
+200::300
+300-->400
+```
 
-Also worth noting is the fact that UDL 2.0 restricts numbers to have just one decimal dot (in UDL 1.0 stuff like 1.2.3.4.5.6.7.8.9 was treated as a single number).
+Also worth noting is the fact that UDL 2.0 restricts numbers to have just one decimal dot (in UDL 1.0 stuff like `1.2.3.4.5.6.7.8.9` was treated as a single number).
 
 User is  restricted to dot character for decimal point. If you need to use comma, please upgrade.
 

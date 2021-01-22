@@ -16,15 +16,17 @@ But there is something new, an idea that comes from CChris: In UDL 2.0 you can d
 
 ## Double quotes around multi-part keywords
 
-Assuming that "else" and "if" are not defined as separate keywords, multi part keyword __"else if"__ will be recognized as a keyword only if both strings are present. So, __"else if"__ will be a keyword, but just __"else"__, or just __"if"__, will be treated as default text. Also note that any number of white space characters might separate __"else"__ and __"if"__.<br>
+Assuming that "else" and "if" are not defined as separate keywords, multi part keyword __"else if"__ will be recognized as a keyword only if both strings are present. So, `else if` will be a keyword, but just `else`, or just `if`, will be treated as default text. Also note that any number of white space characters might separate __"else"__ and __"if"__.<br>
 All these combinations will be correctly recognized:
 
-- __"else if"__ <-- one space
-- __"else   if"__ <-- three spaces
-- __"else \t if"__ <-- one tab
-- __"else \t\t if"__ <-- two tabs
-- __"else \n if"__ <-- one new line
-- __"else \n\n if"__ <-- two new lines
+```
+else if       # one space
+else   if     # three spaces
+else\tif      # one tab
+else\t\tif    # two tabs
+else\nif      # one new line
+else\n\nif    # two new lines
+```
 
 That's right, you can even hit ENTER in the middle of multi-part keyword and it will still be recognized!
 
