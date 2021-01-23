@@ -127,7 +127,7 @@ If you want Line comments to look like Comments, but to be highlighted when nest
 
 ![]({{ site.baseurl}}/images/comments_12.png)
 
-Just define Delimiter 2 (any delimiter will do, I'll use this one for demonstration) like in previous picture. __((EOL))__ is a special keyword that is expanded to a vector of three strings:
+Just define Delimiter 2 (any delimiter will do, I'll use this one for demonstration) like in previous picture. "((EOL))" is a special keyword that is expanded to a vector of three strings:
 
 ```
 \r\n
@@ -136,9 +136,9 @@ Just define Delimiter 2 (any delimiter will do, I'll use this one for demonstrat
 ```
 
 So, that every new line combination is covered.<br>
-__((EOL))__ has been introduced just for this reason. It allows users to define Delimiter equivalent of Line comments.
+"((EOL))" has been introduced just for this reason. It allows users to define Delimiter equivalent of Line comments.
 
-Notice how I wrapped __EOL__ with special __double brace operator__. This operator has a special meaning in UDL 2.1 and it is explained in more detail in [Delimiters section]({{ site.baseurl }}/delimiters.html). For this example it is enough to remember that it expands __EOL__ into an __end of line character__.
+Notice how I wrapped EOL with special **double brace operator**. This operator has a special meaning in UDL 2.1 and it is explained in more detail in [Delimiters section]({{ site.baseurl }}/delimiters.html). For this example it is enough to remember that it **expands EOL into an end of line character**.
 
 As you can see, nesting of delimiters that imitate line comments works just as good.
 

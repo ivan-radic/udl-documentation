@@ -22,7 +22,7 @@ Notice how comments that have 'folding in comment' keywords embedded in them, cr
 
 ## Example 2
 
-Let's steal some ideas from C#. Our code will be organized in '__regions__'.
+Let's steal some ideas from C#. Our code will be organized in 'regions'.
 
 ![]({{ site.baseurl}}/images/folding_in_comment_03.png)
 

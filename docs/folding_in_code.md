@@ -23,7 +23,7 @@ As you can see both Folding 1 and Folding 2 create folding points, but they work
 
 ![]({{ site.baseurl}}/images/folding_in_code_02.png)
 
-__Note__: forward and backward search concept is explained in more detail in [Introduction]({{ site.baseurl }}/index.html) page.<br>
+Note: forward and backward search concept is explained in more detail in [Introduction]({{ site.baseurl }}/index.html) page.<br>
 You should read that part if you haven't already.
 
 ## Example 2

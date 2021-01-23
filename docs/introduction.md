@@ -6,7 +6,7 @@ permalink: /introduction/
 
 # Introduction to UDL 2 code parser
 
-This section explains what "__backward__" and "__forward__" search is.<br>
+This section explains what "backward" and "forward" search is.<br>
 Users should understand this part before proceeding to read about other UDL 2.1 features.
 
 
@@ -25,7 +25,7 @@ The simplest explanation would be something like this:
 
 One obvious limitation is that you have to have space around your keywords, otherwise UDL 1.0 won't recognize them. There were some exceptions from this rule, e.g. operators in UDL 1.0 are just one charecter long, so it was possible to test each character directly and detect an operator. But generally, keywords had to be surounded by whitespace to be correctly recognized.
 
-I call this aproach "__backwards__" detection, because keywords are detected in backward direction (e.g. keyword `first` is detected only after UDL reaches position 5). And yes, I do understand what "backwards" means in English, but I am not a native speaker, so bear with me, I mean nothing offensive.
+I call this aproach "backwards" detection, because **keywords are detected in backward direction** (e.g. keyword `first` is detected only after UDL reaches position 5). And yes, I do understand what "backwards" means in English, but I am not a native speaker, so bear with me, I mean nothing offensive.
 
 
 ## Introduction to UDL 2.1 internal logic

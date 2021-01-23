@@ -27,7 +27,7 @@ Are supported automatically by UDL.
 
 ## Number prefixes 1
 
-Allows to define number prefixes that will be used with __decimal digits only__:
+Allows to define number prefixes that will be used with **decimal digits only**:
 
 ```
 B1011
@@ -37,7 +37,7 @@ D1234567890
 
 ## Number prefixes 2
 
-Allows to define number prefixes that will be used with decimal digits and __extended with Extras1__:
+Allows to define number prefixes that will be used with decimal digits and **extended with Extras1**:
 
 ```
 0x1234567890ABCDEF
@@ -48,7 +48,7 @@ Allows to define number prefixes that will be used with decimal digits and __ext
 
 ## Extra characters 1
 
-If you define "__0x__" hex prefix in Number prefixes 2, then add here "__A B C D E F a b c d e f__"
+If you define "0x" hex prefix in Number prefixes 2, then add here "A B C D E F a b c d e f"
 
 ```
 0x1234
@@ -57,11 +57,11 @@ If you define "__0x__" hex prefix in Number prefixes 2, then add here "__A B C D
 
 ## Extra characters 2
 
-These extra characters are used exactly like Extras1 but Extras2 are used in combination with __Suffix1__. e.g. "__A B C D E F a b c d e f__"
+These extra characters are used exactly like Extras1 but Extras2 are used in combination with Suffix1. e.g. "A B C D E F a b c d e f"
 
 ## Suffix characters 1
 
-Some languages define HEX notifications as a suffix. Let's use __'H__ as an example:
+Some languages define HEX notifications as a suffix. Let's use "'H" as an example:
 
 ```
 1234567890ABCDEF'H
@@ -71,7 +71,7 @@ ABC'H
 
 ## Suffix characters 2
 
-This one works exactly like Prefix1 option, just works from the other end : Let's use "__B O D__" as examples:
+This one works exactly like Prefix1 option, just works from the other end : Let's use "B O D" as examples:
 
 ```
 1011B
@@ -93,9 +93,9 @@ Sometimes you want to express number ranges:
 
 ## Sum up
 
-- __Prefix1__ and __Suffix2__ accept __numbers only__
-- __Prefix2__ accepts numbers and __Extras1__
-- __Suffix1__ accepts numbers and __Extras2__
+- **Prefix1** and **Suffix2** accept **numbers only**
+- **Prefix2** accepts numbers and **Extras1**
+- **Suffix1** accepts numbers and **Extras2**
 
 Also worth noting is the fact that UDL 2.0 restricts numbers to have just one decimal dot (in UDL 1.0 stuff like `1.2.3.4.5.6.7.8.9` was treated as a single number).
 
@@ -108,18 +108,18 @@ That's it with numbers.
 
 ![Numbers dialog]({{ site.baseurl}}/images/numbers_02.png)
 
-__Note: this section is left here for people stuck with old version, if you use newer version, you can safely ignore this section !!!__
+Note: this section is left here for people stuck with old version, if you use newer version, you can safely ignore this section !!!
 
 Number handling is quite different in UDL 2.0 than it was in UDL 1.0. New interface and logical organization of code was designed by CChris. I simply adopted his idea without adding anything to it. I had to significantly change the code to integrate it with UDL 2.0, but I closely followed his superb interface. Let's break it down, feature by feature.
 
 ### Number prefixes
 
 This will be mostly used for hex prefixes.<br>
-Note that even standard C/C++ prefix "__0x__" must be defined here, as it is not supported by default.
+Note that even standard C/C++ prefix "0x" must be defined here, as it is not supported by default.
 
 ### Extra characters in numbers with prefix
 
-e.g. If you define "0x" hex prefix, then add here "__A B C D E F a b c d e f__"
+e.g. If you define "0x" hex prefix, then add here "A B C D E F a b c d e f"
 
 ### Optional sufixes for numbers
 

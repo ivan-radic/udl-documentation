@@ -32,7 +32,7 @@ Nothing fancy here.
 This is little more interesting.<br>
 It is an attempt to define a line comment.
 
-Notice how UDL's special operator __(( ))__ transforms string "__EOL__" into an end of line character. In fact it transforms it into a vector of three strings:
+Notice how UDL's special operator "(( ))" **transforms string "EOL" into an end of line character**. In fact it transforms it into a vector of three strings:
 
 ```
 \r\n
@@ -53,7 +53,7 @@ C++ line comments support continuation to the next line, and there is just one c
 
 But there is a catch, C++ standard also defines something call digraphs and trigraphs. And a trigraph sequence for backslash is a `??/` (question mark twice than forward slash)
 
-So, to have complete definition of C++ line comments, one must define both continue sequences. In UDL 2.1 you do that with special operator __(( ))__. So, if two or more strings are defined inside of a special operator __(( ))__, they are interchangeable.
+So, to have complete definition of C++ line comments, one must define both continue sequences. In UDL 2.1 you do that with special operator "(( ))". So, if two or more strings are defined inside of a special operator "(( ))", they are interchangeable.
 
 ![]({{ site.baseurl}}/images/delimiters_06.png)
 
@@ -74,7 +74,7 @@ In general, white space is not important when defining keywords, so you can use 
 Second thing to understand is grouping of Continue characters.<br>
 C++ line comment (the first group), defines two continue characters, Python line comment defines just one.
 
-By using grouping with operator __(( ))__ I was able to keep the logic of indexing and vertical aligning (both explained in [comments section]({{ site.baseurl }}/comments.html)) and to make sure that "__??/__" applies only to C++ line comments.
+By using grouping with operator "(( ))" I was able to keep the logic of indexing and vertical aligning (both explained in [comments section]({{ site.baseurl }}/comments.html)) and to make sure that "??/" applies only to C++ line comments.
 
 ![]({{ site.baseurl}}/images/delimiters_08.png)
 
@@ -82,8 +82,8 @@ By using grouping with operator __(( ))__ I was able to keep the logic of indexi
 
 ### Example 5
 
-If you need to use "((" and "))" as delimiter's open/close keywords, just define them inside of __(( ))__ operator.<br>
-Also this is the only exception of the rule that whitespace can be used freely. When defining "__))__" inside of special operator __(( ))__ you must "glue" four consecutive close braces. Otherwise you will define an empty keyword set.
+If you need to use "((" and "))" as delimiter's open/close keywords, just define them inside of "(( ))" operator.<br>
+Also this is the only exception of the rule that **whitespace can be used freely**. When defining "))" inside of special operator "(( ))" you must "glue" four consecutive close braces. Otherwise you will define an empty keyword set.
 
 ![]({{ site.baseurl}}/images/delimiters_10.png)
 
