@@ -10,7 +10,7 @@ This section describes new options user have when defining keyword lists.
 
 ![Keywords dialog]({{ site.baseurl}}/images/keywords.png)
 
-Number of keyword lists has been expanded to eight (as suggested by Don, if more is needed, please state so in discussion on Notepad++ forum). Functionality is the same as in UDL 1.0. You can set 'font options' (font type, color, size and so on), and you can turn on 'prefix mode'. Prefix mode simply means that anything that starts with your string will be identified as keyword.
+Number of keyword lists has been expanded to eight (as suggested by Don, if more is needed, please state so in discussion on Notepad++ forum). Functionality is the same as in UDL 1.0. You can set "font options" (font type, color, size and so on), and you can turn on "prefix mode". Prefix mode simply means that anything that starts with your string will be identified as keyword.
 
 But there is something new, an idea that comes from CChris: In UDL 2.0 you can *define multi-part keywords*. To do it, just *put two or more words in quotation marks*. e.g "else if"
 
@@ -32,7 +32,7 @@ That's right, you can even hit ENTER in the middle of multi-part keyword and it 
 
 ## Single quotes around multi-part keywords
 
-Now, what if you want to limit multi-part keywords to be recognized only on the same line? You can do that simply by using single quotes instead of double quotes. So, if you define 'else if', than 'else' and 'if' can be separated by any number of spaces and tabs, but **not new lines**. This is important if you are defining multi-part keywords that are embedded (nested) in line comments.
+Now, what if you want to limit multi-part keywords to be recognized only on the same line? You can do that simply by using single quotes instead of double quotes. So, if you define "else if", than "else" and "if" can be separated by any number of spaces and tabs, but **not new lines**. This is important if you are defining multi-part keywords that are embedded (nested) in line comments.
 
 ## Prefix mode
 

@@ -18,15 +18,15 @@ Note: When selecting keywords that turn comments into folding points, it is impo
 
 ![]({{ site.baseurl}}/images/folding_in_comment_02.png)
 
-Notice how comments that have 'folding in comment' keywords embedded in them, create folding points in your code. I even mixed line comments and normal comments, and it works. So, any comment with 'folding in comment' keywords embedded can become a folding point. And remember, these are just comments, you can put them anywhere you like. In fact, you can use this feature to organize your code. For one way to do it, see next example.
+Notice how comments that have "folding in comment" keywords embedded in them, create folding points in your code. I even mixed line comments and normal comments, and it works. So, any comment with "folding in comment" keywords embedded can become a folding point. And remember, these are just comments, you can put them anywhere you like. In fact, you can use this feature to organize your code. For one way to do it, see next example.
 
 ## Example 2
 
-Let's steal some ideas from C#. Our code will be organized in 'regions'.
+Let's steal some ideas from C#. Our code will be organized in "regions".
 
 ![]({{ site.baseurl}}/images/folding_in_comment_03.png)
 
-One keyword group will be anything that starts with 'at sign' `@`, so check Prefix mode option.
+One keyword group will be anything that starts with "at sign" `@`, so check Prefix mode option.
 
 ![]({{ site.baseurl}}/images/folding_in_comment_04.png)
 
