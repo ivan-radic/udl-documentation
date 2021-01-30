@@ -28,7 +28,7 @@ else\nif      # one new line
 else\n\nif    # two new lines
 ```
 
-That's right, you can even hit ENTER in the middle of multi-part keyword and it will still be recognized!
+That's right, you can even hit <kbd>Enter</kbd> in the middle of multi-part keyword and it will still be recognized!
 
 ## Single quotes around multi-part keywords
 
