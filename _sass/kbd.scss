@@ -5,5 +5,13 @@ kbd {
 	background-color: white;
 	border-radius: .3rem;
 	border: 2px solid gray;
-	box-shadow: 0 3px gray;
+	box-shadow: 0 3px gray, 1px -1px 2px 3px rgba(0, 0, 0, .1);
+	vertical-align: .2rem;
+	cursor: pointer;
+	transition: vertical-align .25s;
+	&:active {
+		background-color: lightgray;
+		box-shadow: 0 1px gray, 1px -1px 1px 1px rgba(0, 0, 0, .1);
+		vertical-align: 0;
+	}
 }
