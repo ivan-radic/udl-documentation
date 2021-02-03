@@ -9,6 +9,7 @@ $npp-orange: #e2911e;
 $npp-green-title: #2c3f18; // rgba(0, 0, 0, 0.7) on $npp-green
 $npp-green-subtitle: #516731; // rgba(0, 0, 0, 0.5) on $npp-green
 $body-border-style: 6px solid $npp-green;
+$p-margin-space: 1.5rem;
 
 // override Bootstrap default styles
 
@@ -19,6 +20,8 @@ $theme-colors: (
 );
 $link-color: $npp-orange;
 $link-hover-color: $npp-orange;
+$paragraph-margin-bottom: $p-margin-space;
+$headings-margin-bottom: $p-margin-space;
 
 // override nav-folder-menu defaults
 $nav-folder-menu-font-color: $npp-green-subtitle;
@@ -70,7 +73,7 @@ img {
 	color: #24292e;
 }
 .site pre {
-	margin-bottom: 1rem;
+	margin-bottom: $p-margin-space;
 	padding: 1rem;
 	border-radius: 3px;
 	line-height: 1.45;
@@ -123,6 +126,13 @@ img {
 		max-height: 90vh;
 		overflow: auto;
 	}
+}
+
+// override styles in Bootstrap's Reboot
+.main ul,
+.main ol,
+.main dl {
+	margin-bottom: $p-margin-space;
 }
 
 .sticky-sidebar {
