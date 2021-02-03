@@ -65,21 +65,21 @@ img {
 }
 
 // intentionally copy the styles from Github; easier to identify as code block
-.site code {
+.main code {
 	margin: 0;
 	padding: 0.2rem 0.4rem;
 	border-radius: 3px;
 	background-color: #eff0f1; // same as stack-overflow
 	color: #24292e;
 }
-.site pre {
+.main pre {
 	margin-bottom: $p-margin-space;
 	padding: 1rem;
 	border-radius: 3px;
 	line-height: 1.45;
 	background-color: #eff0f1; // same as stack-overflow
 }
-.site pre code {
+.main pre code {
 	padding: 0;
 	border: none;
 	background-color: transparent;
