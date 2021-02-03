@@ -95,8 +95,13 @@ img {
 	}
 } 
 
+.nav-sidebar {
+	max-width: 310px; /* inc padding of 15px each */
+	background-color: whitesmoke;
+}
+
 .line-number-sidebar {
-	margin: 0 auto;
+	margin-right: auto;
 	width: 5rem;
 	height: 100%;
 	border-right: 1.5rem solid whitesmoke;
