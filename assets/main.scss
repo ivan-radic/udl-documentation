@@ -117,6 +117,9 @@ img {
 	height: 100%;
 	border-right: 1.5rem solid whitesmoke;
 	background-color: lightgrey;
+	&-container {
+		min-height: 100vh;
+	}
 }
 
 .note {
@@ -178,5 +181,17 @@ img {
 	}
 	.site-footer {
 		border-bottom: $body-border-style;
+	}
+}
+
+// large devices (landscape tablets, 992px and up)
+@media (min-width: 992px) and (min-height: 576px) {
+	.site-footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-right: $body-border-style;
+		border-left: $body-border-style;
 	}
 }
