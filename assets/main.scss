@@ -99,10 +99,12 @@ img {
 
 .site .navbar {
 	.navbar-brand {
+		font-family: $headings-font-family;
 		color: $npp-green-title;
 	}
 	.navbar-text {
 		color: $npp-green-subtitle;
+		font-weight: 500;
 	}
 } 
 
