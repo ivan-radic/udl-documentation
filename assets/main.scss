@@ -194,4 +194,9 @@ img {
 		border-right: $body-border-style;
 		border-left: $body-border-style;
 	}
+	// add bottom margin
+	.below-header-fix {
+		margin-bottom: 10rem;
+		padding-bottom: 1rem;
+	}
 }
