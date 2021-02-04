@@ -20,6 +20,11 @@ $theme-colors: (
 );
 $link-color: $npp-orange;
 $link-hover-color: $npp-orange;
+$headings-font-family:
+	// the font being used by NPP official website
+	"Miriam Libre",
+	// copy from $font-family-sans-serif in Bootstrap
+	-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $paragraph-margin-bottom: $p-margin-space;
 $headings-margin-bottom: $p-margin-space;
 
@@ -28,6 +33,9 @@ $nav-folder-menu-font-color: $npp-green-subtitle;
 $nav-folder-menu-hover-bg-color: $npp-green-subtitle;
 $nav-folder-menu-dot-color: $npp-green-subtitle;
 $nav-folder-menu-current-font-color: $npp-green-title;
+
+// Miriam Libre weighted 700: the font used in NPP official webite
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&display=swap");
 
 @import "bootstrap/scss/bootstrap";
 @import "menu-icon";
