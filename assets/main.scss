@@ -8,6 +8,9 @@ $npp-green: {{ site.npp_ui_green }};
 $npp-orange: #e2911e;
 $npp-green-title: #2c3f18; // rgba(0, 0, 0, 0.7) on $npp-green
 $npp-green-subtitle: #516731; // rgba(0, 0, 0, 0.5) on $npp-green
+$npp-line-number-bar-bg-color: #e4e4e4;
+$npp-folding-bar-bg-color: hsl(0, 0%, 95%); // inspect by human eye
+$npp-status-bar-bg-color: #f0f0f0; // unused; for record only
 $body-border-style: 6px solid $npp-green;
 $p-margin-space: 1.5rem;
 
@@ -110,15 +113,14 @@ img {
 
 .nav-sidebar {
 	max-width: 310px; /* inc padding of 15px each */
-	background-color: whitesmoke;
 }
 
 .line-number-sidebar {
 	margin-right: auto;
 	width: 5rem;
 	height: 100%;
-	border-right: 1.5rem solid whitesmoke;
-	background-color: lightgrey;
+	border-right: 1.5rem solid $npp-folding-bar-bg-color;
+	background-color: $npp-line-number-bar-bg-color;
 	&-container {
 		min-height: 100vh;
 	}
