@@ -1,11 +1,13 @@
 {% assign pages = site.html_pages | sort: 'weight' %}
 {% assign home_position = include.home_position | default: 'top' %}
 <ul>
-	{% if home_position == 'top' %}
+	{% if home_position == 'top' and page.url == '/' %}
+	<li class="current">
+		Home
+	</li>
+	{% elsif home_position == 'top' %}
 	<li>
-		{% unless page.url == '/' %}<a href="{{ '/' | relative_url }}">{% endunless %}
-			Home
-		{% unless page.url == '/' %}</a>{% endunless %}
+		<a href="{{ '/' | relative_url }}">Home</a>
 	</li>
 	{% endif %}
 	{% for p in pages %}
@@ -21,11 +23,13 @@
 	{% endif %}
 	{% endunless %}
 	{% endfor %}
-	{% if home_position == 'bottom' %}
+	{% if home_position == 'bottom' and page.url =='/' %}
+	<li class="current">
+		Home
+	</li>
+	{% elsif home_position == 'bottom' %}
 	<li>
-		{% unless page.url == '/' %}<a href="{{ '/' | relative_url }}">{% endunless %}
-			Home
-		{% unless page.url == '/' %}</a>{% endunless %}
+		<a href="{{ '/' | relative_url }}">Home</a>
 	</li>
 	{% endif %}
 </ul>
