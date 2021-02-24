@@ -74,7 +74,7 @@ In general, white space is not important when defining keywords, so you can use 
 Second thing to understand is grouping of Continue characters.<br>
 C++ line comment (the first group), defines two continue characters, Python line comment defines just one.
 
-By using grouping with operator "(( ))" I was able to keep the logic of indexing and vertical aligning (both explained in [comments section]({{ site.baseurl }}/comments.html)) and to make sure that "??/" applies only to C++ line comments.
+By using grouping with operator "(( ))" I was able to keep the logic of indexing and vertical aligning (both explained in [comments section]({{ site.baseurl }}/comments/)) and to make sure that "??/" applies only to C++ line comments.
 
 ![]({{ site.baseurl}}/images/delimiters_08.png)
 

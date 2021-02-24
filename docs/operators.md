@@ -7,7 +7,7 @@ permalink: /operators/
 # Operators
 
 This section gives short explanation of operator options.<br>
-For detailed discussion about "forward" and "backward" search, please read section [Introduction]({{ site.baseurl }}/index.html).
+For detailed discussion about "forward" and "backward" search, please read section [Introduction]({{ site.baseurl }}/introduction/).
 
 ![Operators dialog]({{ site.baseurl}}/images/operators_01.png)
 
