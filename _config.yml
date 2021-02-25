@@ -34,9 +34,6 @@ host: 0.0.0.0
 exclude:
   - CONTRIBUTING.md
   - README.md
-  - .bundle/
-  - .stylelintrc.json
-  - build.sh
   - coffeelint.json
   # includes the list by Jekyll defaults:
   - Gemfile
@@ -46,6 +43,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  # note: dotfiles are excluded by default
 
 # Build Settings
 # ==============
