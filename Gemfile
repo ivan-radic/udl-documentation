@@ -9,7 +9,7 @@ ruby "~> 2.7"
 # - `bundle update` to update all gems.
 # - `bundle lock --update` to update Gemfile.lock.
 
-gem "github-pages", "209", group: :jekyll_plugins
+gem "github-pages", "212", group: :jekyll_plugins
 # i.e. Not gem "jekyll"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
