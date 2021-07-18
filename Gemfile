@@ -31,3 +31,5 @@ gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 # Therefore, you don't need to include them in this Gemfile.
 # Run `bundle exec github-pages versions` to see the list.
 
+# Helpful to avoid error about missing Javascript runtime.
+gem "mini_racer", "~> 0.4.0"
