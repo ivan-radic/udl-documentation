@@ -17,6 +17,16 @@ Two ways to contribute to this repo:
 
 For details, please see [CONTRIBUTING.md](CONTRIBUTING.md). There are some design matters for your reference.
 
+## Development Note
+
+This site is built using Jekyll based on Ruby. To build this site in your local machine, you'll need:
+
+1. Ruby v2.7.x: Best version is stated in ".ruby-version" file.
+1. Bundler and Gemfile to install and update gems. Please do `bundle install`.
+1. Optional: If you have problem while `bundle install`, you may want to lock your Python version stated in ".python-version" file.
+1. Bootstrap SCSS via `git submodule update` (Not using RubyGems).
+1. Do `bundle exec jekyll serve` to start your local server.
+
 ## Other things
 
 For changes of UDL rules and help, please discuss on [official Notepad\+\+ community](https://community.notepad-plus-plus.org).
