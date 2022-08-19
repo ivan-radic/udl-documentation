@@ -9,8 +9,15 @@ ruby "~> 2.7"
 # - `bundle update` to update all gems.
 # - `bundle lock --update` to update Gemfile.lock.
 
-gem "github-pages", "215", group: :jekyll_plugins
+gem "github-pages", "227", group: :jekyll_plugins
 # i.e. Not gem "jekyll"
+
+# The github-pages gem already includes the following dependencies:
+# - gem "minima"
+# - gem "jekyll-feed"
+# - gem "kramdown-parser-gfm"
+# Therefore, you don't need to include them in this Gemfile.
+# Run `bundle exec github-pages versions` to see the list.
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
@@ -22,14 +29,6 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
-# The github-pages gem already includes the following dependencies:
-#
-# - gem "jekyll-feed"
-# - gem "kramdown-parser-gfm"
-# - gem "minima"
-#
-# Therefore, you don't need to include them in this Gemfile.
-# Run `bundle exec github-pages versions` to see the list.
-
-# Helpful to avoid error about missing Javascript runtime.
-# gem "mini_racer", "~> 0.4.0"
+# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
+# do not have a Java counterpart.
+gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
