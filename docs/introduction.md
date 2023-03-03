@@ -25,7 +25,7 @@ The simplest explanation would be something like this:
 
 One obvious limitation is that you have to have space around your keywords, otherwise UDL 1.0 won't recognize them. There were some exceptions from this rule, e.g. operators in UDL 1.0 are just one charecter long, so it was possible to test each character directly and detect an operator. But generally, keywords had to be surounded by whitespace to be correctly recognized.
 
-I call this aproach "backwards" detection, because **keywords are detected in backward direction** (e.g. keyword `first` is detected only after UDL reaches position 5). And yes, I do understand what "backwards" means in English, but I am not a native speaker, so bear with me, I mean nothing offensive.
+I call this approach "backwards" detection, because **keywords are detected in backward direction** (e.g. keyword `first` is detected only after UDL reaches position 5). And yes, I do understand what "backwards" means in English, but I am not a native speaker, so bear with me, I mean nothing offensive.
 
 
 ## Introduction to UDL 2.1 internal logic
@@ -42,7 +42,7 @@ What we have here is a combination of two keywords (`first` and `second`) connec
     - it applies keyword styler (for `first`) and a styler for operator `<<`, and sets new "search start point" to position 7 (letter `s`)
 1. in the same way UDL 2.1 detects second operator `;` with "forward" search and second keyword `second` with backward search.
 
-So, UDL 2.1 uses a cobmination of "forward" and "backward" search in order to detect keywords that are "glued" together. And all keywords in UDL 2.1 are diveded in two basic groups which I call "backwards" and "forwards" (feel free to suggest a better name for these).
+So, UDL 2.1 uses a combination of "forward" and "backward" search in order to detect keywords that are "glued" together. And all keywords in UDL 2.1 are diveded in two basic groups which I call "backwards" and "forwards" (feel free to suggest a better name for these).
 
 
 ## Complete list of "backwards" and "forwards" keywords
@@ -64,7 +64,7 @@ Forwards:
 
 ## More on "forward" and "backward" detection logic
 
-Understanding dual logic of UDL 2.1 (detecting keyword in both backward and forward direction) is very important. So, before we proceed with details of UDL 2.1, lets first explain why is it important and where things can go wrong. The simplest way to demonstrate "backward" and "forward" logic is to define two sets of operators:
+Understanding dual logic of UDL 2.1 (detecting keyword in both backward and forward direction) is very important. So, before we proceed with details of UDL 2.1, let's first explain why is it important and where things can go wrong. The simplest way to demonstrate "backward" and "forward" logic is to define two sets of operators:
 
 C++ style:
 
@@ -84,12 +84,12 @@ and or not
 
 C++ boolean operators are special characters. They can never be part of variable name. That's why they can be "glued" to preceding or following keyword. And this is demonstrated in line three. There are no white spaces in line three, but each operator is recognized by UDL 2.1.
 
-Lets follow what happens in the background. For example, we'll focus on `&&` operator in line three.
+Let's follow what happens in the background. For example, we'll focus on `&&` operator in line three.
 
 1. when UDL reaches first `&` character it performs "forward" search and it detects that next two characters form an operator.
 1. at this point UDL does not care what follows after `&&` it simply treats `&&` as an operator
 
-Lets repeat that again.<br>
+Let's repeat that again.<br>
 In C++ an operator is always an operator and can never be something else, like part of another keyword or variable name. So, in forward search, there are no false positives, and it is not important what follows before or after forward keyword.
 
 ### Backward search example
@@ -100,7 +100,7 @@ In C++ an operator is always an operator and can never be something else, like p
 
 Python boolean operators are normal English words and or not, very similar to other Python keywords. Unlike in C++, Python operators can easily be part of other keywords or variable names.
 
-So, if we define Python operators as forward search keywords, we end up with more than we asked for. Lets explain first picture (again operators are underlined to be easily recognized):
+So, if we define Python operators as forward search keywords, we end up with more than we asked for. Let's explain first picture (again operators are underlined to be easily recognized):
 
 - in line one, Python operators work as expected
 - in line three, operators are highlighted even if syntax is not correct
@@ -115,6 +115,6 @@ That's why I defined a two sets of operators: Operators1 and Operators2:
 
 Second picture shows what happens when we redefine Python operators as Operators2. This time around, there are no ugly surprises. Operators are detected only if surrounded by white space or forward search keywords like Operators1 (demonstrated in lines 9,10,11)
 
-To sum up: both forward and backward search logic must be implemented in UDL 2.1 and it is user's job to decide which one should be applied on a given set of keywords. Rule of the thumb is: if your keyword can be "glued" to other keywords, like C++ boolean operators, use forward search, if your keyword must be separated from rest of the source code by white space or special characters, use backward search.
+To sum up: both forward and backward search logic must be implemented in UDL 2.1 and it is the user's job to decide which one should be applied on a given set of keywords. The rule of thumb is: if your keyword can be "glued" to other keywords, like C++ boolean operators, use forward search; if your keyword must be separated from the rest of the source code by white space or special characters, use backward search.
 
-This option is given in case of operators and folding in code keywords. All other keyword sets simply fall into one of two search directions, and are not user selectable. Complete list is given in paragraph above.
+This option is given in case of operators and folding in code keywords. All other keyword sets simply fall into one of two search directions, and are not user selectable. Complete list is given in the paragraph above.
