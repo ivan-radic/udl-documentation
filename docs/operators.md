@@ -27,7 +27,7 @@ In short: these should be special non-alphanumeric characters
 ## Operators2
 
 This is a "backward" search group.<br>
-These operators can NOT be "glued" to other keywords. They must be separated from rest of the code by whitespace or by other "forward" search keywords.You can use it to define operators like:
+These operators can NOT be "glued" to other keywords. They must be separated from rest of the code by whitespace or by other "forward" search keywords. You can use it to define operators like:
 
 ```
 and or not in out like
